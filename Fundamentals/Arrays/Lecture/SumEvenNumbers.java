@@ -8,11 +8,11 @@ public class SumEvenNumbers {
         Scanner scan = new Scanner ( System.in );
         String input = scan.nextLine ( );
         String [] items = input.split ( " " );
-        int [] array = Arrays.stream ( items ).mapToInt ( e-> Integer.parseInt ( e )).toArray( );
+        int [] array = Arrays.stream ( items ).mapToInt ( Integer::parseInt ).toArray( );
         int evenSum = 0;
-        for ( int position = 0 ; position < array.length ; position++ ) {
-            if ( array[position] % 2 == 0){
-                evenSum += array [position];
+        for ( int i : array ) {
+            if ( i % 2 == 0 ) {
+                evenSum += i;
             }
         }
         System.out.println ( evenSum );
