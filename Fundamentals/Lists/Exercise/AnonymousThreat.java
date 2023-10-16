@@ -30,12 +30,36 @@ public class AnonymousThreat {
             } else if ( operationLine.contains ( "divide" ) ) {
                 int index = Integer.parseInt ( divideOperation[1] );
                 int partitions = Integer.parseInt ( divideOperation[2] );
+                String toManipulate = input.get ( index );
                 if ( partitions != 0 ) {
+                    int counter = 0;
                     if ( input.get ( index ).length ( ) % partitions == 0 ) {
-                        divideExact ( input, index, partitions );
+                        for ( int i = 0 ; i < partitions ; i++ ) {
+                            StringBuilder build = new StringBuilder ( );
+                            for ( int j = 0 ; j < toManipulate.length ( ) / partitions ; j++ ) {
+                                build.append ( toManipulate.charAt ( counter ) );
+                                counter++;
+                            }
+                            input.add ( index + i + 1, build.toString ( ) );
+                        }
                     } else {
-                        divide ( input, index, partitions );
+                        for ( int i = 0 ; i < partitions ; i++ ) {
+                            StringBuilder build = new StringBuilder ( );
+                            for ( int j = 0 ; j < toManipulate.length ( ) / partitions ; j++ ) {
+                                build.append ( toManipulate.charAt ( counter ) );
+                                counter++;
+                            }
+                            if( i + 1 == partitions ){
+                                for ( int k = counter ; k < toManipulate.length () ; k++ ) {
+                                    build.append ( toManipulate.charAt ( counter ) );
+                                    counter++;
+                                }
+                            }
+                            input.add ( index + i + 1, build.toString ( ) );
+                        }
+
                     }
+                    input.remove ( index );
                 }
             }
             operationLine = scan.nextLine ( );
@@ -43,34 +67,5 @@ public class AnonymousThreat {
         for ( String element : input ) {
             System.out.print ( element + " " );
         }
-    }
-    public static void divide ( List<String> input, int index, int partitions ) {
-        String toManipulate = input.get ( index );
-        int counter = 0;
-        for ( int i = 0 ; i < partitions ; i++ ) {
-            StringBuilder build = new StringBuilder ( );
-            for ( int j = 0 ; j < toManipulate.length ( ) / partitions ; j++ ) {
-                build.append ( toManipulate.charAt ( counter ) );
-                counter++;
-            }
-            input.add ( index + i + 1, build.toString ( ) );
-        }
-        for ( int i = counter ; i < toManipulate.length ( ) ; i++ ) {
-            input.set ( input.size ( ) - 1, input.get ( input.size ( ) - 1 ) + toManipulate.charAt ( i ) );
-        }
-        input.remove ( index );
-    }
-    public static void divideExact ( List<String> input, int index, int partitions ) {
-        String toManipulate = input.get ( index );
-        int counter = 0;
-        for ( int i = 0 ; i < partitions ; i++ ) {
-            StringBuilder build = new StringBuilder ( );
-            for ( int j = 0 ; j < toManipulate.length ( ) / partitions ; j++ ) {
-                build.append ( toManipulate.charAt ( counter ) );
-                counter++;
-            }
-            input.add ( index + i + 1, build.toString ( ) );
-        }
-        input.remove ( index );
     }
 }
