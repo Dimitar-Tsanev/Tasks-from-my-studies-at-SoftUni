@@ -10,7 +10,7 @@ public class GroomingSalon {
 
     public GroomingSalon ( int capacity ) {
         this.capacity = capacity;
-        this.data = new ArrayList<> (capacity);
+        this.data = new ArrayList<> ();
 
     }
     public void add ( Pet pet ) {
