@@ -36,7 +36,7 @@ public class Pet {
     }
     @Override
     public String toString (){
-        return String.format ( "%s %d - %s",
+        return String.format ( "%s %d - (%s)",
                 this.name,this.age,this.owner );
     }
 }
