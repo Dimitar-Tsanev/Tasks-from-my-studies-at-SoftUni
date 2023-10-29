@@ -50,5 +50,4 @@ public class GroomingSalon {
         }
         return statistic + petListInformation;
     }
-
 }

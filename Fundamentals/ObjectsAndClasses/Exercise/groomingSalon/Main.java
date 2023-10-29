@@ -22,12 +22,9 @@ public final class Main {
 
         Pet cat = new Pet("Bella", 2, "Mia");
         Pet bunny = new Pet("Zak", 4, "Jon");
-        Pet doggy = new Pet("Trim", 6, "Lilith");
 
         salon.add(cat);
         salon.add(bunny);
-        salon.add (doggy);
-
 
 // Get Pet
         Pet pet = salon.getPet("Bella", "Mia");
