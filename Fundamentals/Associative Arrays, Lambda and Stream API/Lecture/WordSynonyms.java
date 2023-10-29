@@ -17,7 +17,9 @@ public class WordSynonyms {
             synonyms.get(word).add ( synonym );
         }
         for ( Map.Entry <String, ArrayList<String>> entry: synonyms.entrySet () ) {
-            System.out.println (  entry.getKey ( )  + " - " + String.join ( ", ", entry.getValue ()));
+            System.out.println (  entry.getKey ( )  +
+                    " - " +
+                    String.join ( ", ", entry.getValue ()));
         }
     }
 }
