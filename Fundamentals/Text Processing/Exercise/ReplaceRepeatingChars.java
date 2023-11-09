@@ -9,6 +9,7 @@ public class ReplaceRepeatingChars {
 
         if ( input.isEmpty ( ) ) {
             return;
+
         }
         if ( result.isEmpty () ) { // in "judge system" must be replaced with -> result.length () == 0
             result.append ( input.charAt ( 0 ) );
@@ -20,7 +21,6 @@ public class ReplaceRepeatingChars {
 
             }
         }
-
         System.out.println ( result );
     }
 }
