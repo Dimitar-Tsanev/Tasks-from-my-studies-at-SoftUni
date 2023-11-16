@@ -19,20 +19,20 @@ public class SoftUniBarIncome {
             Matcher productMatcher = productPattern.matcher ( input );
 
             Pattern countPattern = Pattern.compile ( "\\|(?<count>\\d+)\\|" );
-            Matcher counttMatcher = countPattern.matcher ( input );
+            Matcher countMatcher = countPattern.matcher ( input );
 
             Pattern pricePattern = Pattern.compile ( "(?<price>\\d+[.\\d+]*)\\$" );
             Matcher priceMatcher = pricePattern.matcher ( input );
 
             boolean haveName = nameMatcher.find ( );
             boolean haveProduct = productMatcher.find ( );
-            boolean haveCount = counttMatcher.find ( );
+            boolean haveCount = countMatcher.find ( );
             boolean havePrice = priceMatcher.find ( );
 
             if ( haveName && haveProduct && haveCount && havePrice ) {
                 String name = nameMatcher.group ("name");
                 String product = productMatcher.group ("product");
-                int count = Integer.parseInt ( counttMatcher.group ( "count" ) );
+                int count = Integer.parseInt ( countMatcher.group ( "count" ) );
                 double price = Double.parseDouble ( priceMatcher.group ( "price" ) );
 
                 double totalPrice = price * count;
