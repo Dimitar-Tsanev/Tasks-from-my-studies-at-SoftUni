@@ -12,7 +12,6 @@ public class SoftUniBarIncome {
 
         while (!input.equals ( "end of shift" )) {
 
-
             Pattern namePattern = Pattern.compile ( "%(?<name>[A-Z][a-z]+)%" );
             Matcher nameMatcher = namePattern.matcher ( input );
 
@@ -35,7 +34,6 @@ public class SoftUniBarIncome {
                 String product = productMatcher.group ("product");
                 int count = Integer.parseInt ( counttMatcher.group ( "count" ) );
                 double price = Double.parseDouble ( priceMatcher.group ( "price" ) );
-
 
                 double totalPrice = price * count;
                 total += totalPrice;
