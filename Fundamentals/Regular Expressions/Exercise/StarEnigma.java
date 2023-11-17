@@ -67,7 +67,6 @@ public class StarEnigma {
                 }
             }
         }
-
         Collections.sort ( attackedPlanets );
         Collections.sort ( destroyedPlanets );
     }
