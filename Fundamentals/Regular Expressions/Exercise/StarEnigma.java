@@ -24,9 +24,6 @@ public class StarEnigma {
 
         sortsThePlanetsByAttackCommand ( messages,attackedPlanets,destroyedPlanets );
 
-        Collections.sort ( attackedPlanets );
-        Collections.sort ( destroyedPlanets );
-
         System.out.printf ( "Attacked planets: %d%n", attackedPlanets.size () );
         attackedPlanets.forEach ( p -> System.out.printf ( "-> %s%n", p ) );
 
@@ -70,5 +67,8 @@ public class StarEnigma {
                 }
             }
         }
+
+        Collections.sort ( attackedPlanets );
+        Collections.sort ( destroyedPlanets );
     }
 }
