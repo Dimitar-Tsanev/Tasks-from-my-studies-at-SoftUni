@@ -17,8 +17,8 @@ public class EmojiDetector {
 
         while (digitMatcher.find ( )) {
             coolThreshold *= Integer.parseInt ( digitMatcher.group ( ) );
-        }
 
+        }
         Pattern emojiPattern = Pattern.compile ( "(\\*{2}|:{2})(?<emoji>[A-Z][a-z]{2,})\\1" );
         Matcher emojiMatcher = emojiPattern.matcher ( input );
 
@@ -31,12 +31,13 @@ public class EmojiDetector {
 
             for ( char character : emoji.toCharArray ( ) ) {
                 emojiThreshold += character;
-            }
 
+            }
             allEmoji.add ( emojiMatcher.group ( ) );
 
             if ( emojiThreshold > coolThreshold ) {
                 coolEmoji.add ( emojiMatcher.group ( ) );
+
             }
         }
         System.out.println ( "Cool threshold: " + coolThreshold );
