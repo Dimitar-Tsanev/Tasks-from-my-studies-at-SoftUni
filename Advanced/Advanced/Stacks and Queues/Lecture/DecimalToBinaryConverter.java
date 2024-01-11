@@ -10,6 +10,7 @@ public class DecimalToBinaryConverter {
         if ( num == 0 ){
             System.out.println ( num );
             return;
+
         }
 
         ArrayDeque <Integer> binary = new ArrayDeque<> ();
