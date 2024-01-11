@@ -33,5 +33,6 @@ public class SimpleCalculator {
             }
         }
         System.out.println ( sum );
+
     }
 }
