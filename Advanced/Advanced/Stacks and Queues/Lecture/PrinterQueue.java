@@ -25,7 +25,7 @@ public class PrinterQueue {
             fileName = scanner.nextLine ( );
 
         }
-
         queue.forEach ( e -> System.out.println ( queue.poll () ) );
+
     }
 }
