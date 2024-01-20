@@ -32,19 +32,17 @@ public class VoinaNumberGame {
 
             }
         }
-        if (firstPlayer.size () > secondPlayer.size ( )){
-            System.out.println ("First player win!" );
-            
-        } else if ( firstPlayer.size () < secondPlayer.size ( ) ) {
-            System.out.println ( "Second player win!" );
-            
-        }else{
-            System.out.println ("Draw!");
-        }
+        String wins = firstPlayer.size () > secondPlayer.size ( )? "First player win!":
+                firstPlayer.size () < secondPlayer.size (  )? "Second player win!" : "Draw!";
+
+        System.out.println (wins);
 
     }
     private static void getCards ( Set<Integer> cards){
-        List<Integer> numbers = Arrays.stream ( scanner.nextLine ( ).split ( "\\s+" ) ).map ( Integer::parseInt ).collect ( Collectors.toList ( ) );
+        List<Integer> numbers = Arrays.stream ( scanner.nextLine ( ).split ( "\\s+" ) )
+                .map ( Integer::parseInt )
+                .collect ( Collectors.toList ( ) );
+
         cards.addAll ( numbers );
     }
 }
