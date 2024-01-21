@@ -8,7 +8,7 @@ public class CopyBytes {
         try (InputStream fileInputStream = new FileInputStream ( inputPath );
              OutputStream outputStream = new FileOutputStream ( outputPath )){
 
-            int oneByte;
+            int oneByte = 0;
             while ((oneByte = fileInputStream.read ()) >=0){
                 if (oneByte == 10 || oneByte == 32){
                     outputStream.write ( oneByte );
