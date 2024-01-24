@@ -11,7 +11,9 @@ public class SumNumbersFirstWaySolution {
 
         Function<String, Integer> parseToInteger = x -> Integer.parseInt ( x );
 
-        List<Integer> numbers = Arrays.stream ( scanner.nextLine ().split ( ",\\s+" ) ).map ( parseToInteger ).collect( Collectors.toList());
+        List<Integer> numbers = Arrays.stream ( scanner.nextLine ().split ( ",\\s+" ) )
+                .map ( parseToInteger )
+                .collect( Collectors.toList());
 
         int count = numbers.size ();
         int sum = numbers.stream ().mapToInt ( Integer::valueOf ).sum ();
