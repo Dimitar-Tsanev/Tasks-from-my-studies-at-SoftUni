@@ -12,6 +12,5 @@ public class SumNumbersSecondWaySolution {
 
         System.out.printf ( "Count = %d%n" +
                 "Sum = %d%n", numbers.getCount (), numbers.getSum () );
-
     }
 }
