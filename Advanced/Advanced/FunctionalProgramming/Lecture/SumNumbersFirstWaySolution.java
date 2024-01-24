@@ -20,6 +20,5 @@ public class SumNumbersFirstWaySolution {
 
         System.out.println ( "Count = " + count );
         System.out.println (  "Sum = " + sum);
-
     }
 }
