@@ -1,6 +1,6 @@
 package CarInfo;
 
-public class Car {
+class Car {
     private String brand;
     private String model;
     private int horsePower;
