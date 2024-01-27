@@ -1,6 +1,6 @@
 package BankAccount;
 
-public class BankAccount {
+class BankAccount {
     private static final double DEFAULT_INTEREST = 0.02;
     private static double interestRate = DEFAULT_INTEREST;
     private static int bankAccountCount = 1;
