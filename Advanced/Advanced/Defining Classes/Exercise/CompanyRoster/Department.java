@@ -45,13 +45,13 @@ class Department {
         return Objects.hash ( departmentName );
     }
 
-    public double getDepartmentAverageSalary (Department department){
+    public void getDepartmentAverageSalary (){
         double salary = 0.0;
-        for ( Employee employee: department.getEmployees ( ) ){
+        for ( Employee employee: this.employees ){
             salary += employee.getSalary ();
         }
-        salary = salary / department.getEmployees ().size ();
-        return salary;
+        salary = salary /  this.employees.size ();
+        setAverageSalary ( salary );
     }
 
     public void setAverageSalary ( double averageSalary ) {

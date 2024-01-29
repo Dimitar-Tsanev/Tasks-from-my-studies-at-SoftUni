@@ -26,20 +26,19 @@ public class Main {
 
         }
         Department bestSalary = getBestAverageSalaryDepartment ( departments );
-        System.out.println ( "Highest Average Salary: " + bestSalary.getDepartmentName ());
+        System.out.println ( "Highest Average Salary: " + bestSalary.getDepartmentName ( ) );
 
-        Comparator<Employee> salarySort = (x1,x2) -> Double.compare ( x2.getSalary ( ), x1.getSalary ( ) );
+        Comparator<Employee> salarySort = ( x1, x2 ) -> Double.compare ( x2.getSalary ( ), x1.getSalary ( ) );
 
-        bestSalary.getEmployees ().sort ( salarySort );
-        bestSalary.getEmployees ().forEach ( System.out::println );
+        bestSalary.getEmployees ( ).sort ( salarySort );
+        bestSalary.getEmployees ( ).forEach ( System.out::println );
 
     }
 
     private static Department getBestAverageSalaryDepartment ( List<Department> departments ) {
-        Department best = new Department ();
+        Department best = new Department ( );
         for ( Department department : departments ) {
-            double averageSalary = department.getDepartmentAverageSalary ( department );
-            department.setAverageSalary ( averageSalary );
+            department.getDepartmentAverageSalary ();
 
             if ( best.getAverageSalary ( ) < department.getAverageSalary ( ) ) {
                 best = department;

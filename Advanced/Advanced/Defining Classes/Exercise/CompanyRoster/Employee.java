@@ -10,31 +10,17 @@ class Employee {
     private int age;
 
     public Employee (String name, double salary, String position, String department ){
-        this.name = (name);
-        this.salary = (salary);
-        this.position = (position);
-        this.department = (new Department (department));
-        this.age = -1;
-        this.email = "n/a";
+        this (name, salary,position, department, -1 );
 
     }
 
     public Employee ( String name, double salary, String position, String department, int age ){
-        this.name = (name);
-        this.salary = (salary);
-        this.position = (position);
-        this.department = (new Department (department));
-        this.age = (age);
-        this.email = "n/a";
+        this (name, salary, position,department,"n/a",  age);
+
 
     }
     public Employee (String name, double salary, String position, String department,String email ){
-        this.name = (name);
-        this.salary = (salary);
-        this.position = (position);
-        this.department = (new Department (department));
-        this.age = -1;
-        this.email = email;
+        this (name, salary, position, department, email, -1);
 
     }
     public Employee ( String name, double salary, String position, String department, String email, int age ) {
