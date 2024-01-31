@@ -34,9 +34,9 @@ public class ItsChocolateTime {
             }
         }
         String win = "It’s a Chocolate Time. All chocolate types are prepared.";
-        String loose = "Sorry, but you didn't succeed to prepare all types of chocolates.";
+        String lose = "Sorry, but you didn't succeed to prepare all types of chocolates.";
 
-        System.out.println ( producedChocolate.size () == 3 ? win: loose);
+        System.out.println ( producedChocolate.size () == 3 ? win: lose);
         producedChocolate.forEach ( (k,v ) -> System.out.println ( "# " + k + " --> " + v ));
 
     }
