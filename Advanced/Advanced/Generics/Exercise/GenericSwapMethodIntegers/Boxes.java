@@ -3,7 +3,7 @@ package GenericSwapMethodIntegers;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Boxes<T extends Box <T>> {
+public class Boxes<T> {
 
     private List <T> boxes;
 
