@@ -9,7 +9,7 @@ public class Main {
         int numberOfLines = Integer.parseInt ( scanner.nextLine () );
 
         for ( int i = 0 ; i < numberOfLines ; i++ ) {
-            Box box = new Box ( scanner.nextLine ());
+            Box <String> box = new Box <> ( scanner.nextLine ());
 
             System.out.println ( box );
 
