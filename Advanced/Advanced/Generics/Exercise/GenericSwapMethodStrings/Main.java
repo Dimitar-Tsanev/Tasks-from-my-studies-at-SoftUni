@@ -9,10 +9,10 @@ public class Main {
 
         int numberOfLines = Integer.parseInt ( scanner.nextLine () );
 
-        Boxes boxes = new Boxes<> ();
+        Boxes <Box<String>> boxes = new Boxes<> ();
 
         for ( int i = 0 ; i < numberOfLines ; i++ ) {
-            Box box = new Box (scanner.nextLine ());
+            Box<String> box = new Box<> (scanner.nextLine ());
 
             boxes.add ( box );
         }

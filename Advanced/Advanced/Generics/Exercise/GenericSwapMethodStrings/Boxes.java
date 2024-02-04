@@ -3,7 +3,7 @@ package GenericSwapMethodStrings;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Boxes<T> {
+public class Boxes<T > {
 
     private List <T> boxes;
 
