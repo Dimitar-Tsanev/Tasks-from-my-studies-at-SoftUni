@@ -8,20 +8,20 @@ public class Main {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner ( System.in );
 
-        List<Box> boxes = new ArrayList<> ();
+        List<Box<String>> boxes = new ArrayList<> ();
 
         int linesNumber = Integer.parseInt ( scanner.nextLine () );
 
         for ( int i = 0 ; i < linesNumber ; i++ ) {
-            Box box = new Box<> ( scanner.nextLine ()  );
+            Box <String>box = new Box<> ( scanner.nextLine ()  );
 
             boxes.add (box );
         }
 
-        Box toCompare = new Box<> ( scanner.nextLine ()  );
+        Box <String> toCompare = new Box<> ( scanner.nextLine ()  );
 
         int counter = 0;
-        for ( Box box: boxes ){
+        for ( Box<String> box: boxes ){
             if(box.compare ( toCompare )){
                 counter++;
             }

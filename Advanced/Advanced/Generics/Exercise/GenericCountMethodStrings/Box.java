@@ -11,8 +11,8 @@ public class Box <T extends Comparable<T>> {
     public T getElement () {
         return this.element;
     }
-    public boolean compare (Box box){
-        return this.element.compareTo ( (T) box.getElement ( ) ) > 0;
+    public boolean compare (Box<T> box){
+        return this.element.compareTo ( box.getElement ( ) ) > 0;
     }
 }
 
