@@ -6,19 +6,17 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ListyIterator<String> implements Iterable<String> {
+class ListyIterator implements Iterable<String> {
     private List<String> data;
     private int pointer;
 
-    @SafeVarargs
     public ListyIterator ( String... elements ) {
-
         this.data = new ArrayList<> ( Arrays.asList ( elements ) );
 
         this.pointer = 0;
     }
     public Iterator<String> iterator () {
-        return new CustomIterator<> ( );
+        return new CustomIterator ( );
     }
 
     @Override
@@ -45,7 +43,7 @@ public class ListyIterator<String> implements Iterable<String> {
         System.out.println ( !data.isEmpty ( ) ? data.get ( pointer ) : "Invalid Operation!" );
     }
 
-    private final class CustomIterator<String> implements Iterator<String> {
+    private class CustomIterator implements Iterator<String> {
         private int counter = 0;
 
         public boolean hasNext () {
@@ -53,7 +51,7 @@ public class ListyIterator<String> implements Iterable<String> {
         }
 
         public String next () {
-            return (String) data.get ( counter++ );
+            return data.get ( counter++ );
         }
 
     }

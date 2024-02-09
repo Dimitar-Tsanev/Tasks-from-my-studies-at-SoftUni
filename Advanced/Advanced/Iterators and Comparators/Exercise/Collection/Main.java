@@ -7,7 +7,7 @@ public class Main {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner ( System.in );
 
-        ListyIterator<String> listy = new ListyIterator<> ( );
+        ListyIterator listy = new ListyIterator ( );
 
         String command = scanner.nextLine ( );
 
@@ -17,7 +17,7 @@ public class Main {
             switch (commandData[0]) {
                 case "Create":
                     String[] elements = Arrays.stream ( commandData ).skip ( 1 ).toArray ( String[]::new );
-                    listy = new ListyIterator<> ( elements );
+                    listy = new ListyIterator ( elements );
                     break;
                 case "Move":
                     System.out.println ( listy.move ( ) );
