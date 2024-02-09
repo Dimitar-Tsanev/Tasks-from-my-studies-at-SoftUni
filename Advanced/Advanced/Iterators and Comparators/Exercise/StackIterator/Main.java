@@ -27,10 +27,12 @@ public class Main {
 
             }
             commandData = scanner.nextLine ( );
+
         }
         if ( stack.size ( ) != 0 ) {
             stack.forEach ( System.out::println );
             stack.forEach ( System.out::println );
+
         }
     }
 }

@@ -5,9 +5,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class CustomStack<T> implements Iterable<T> {
+class CustomStack<T> implements Iterable<T> {
     private List<T> stack;
-
 
     public CustomStack () {
         this.stack = new ArrayList<> ( );
@@ -34,10 +33,10 @@ public class CustomStack<T> implements Iterable<T> {
 
     @Override
     public Iterator<T> iterator () {
-        return new StackIterator<> ( );
+        return new StackIterator( );
     }
 
-    private final class StackIterator<T> implements Iterator<T> {
+    private final class StackIterator implements Iterator<T> {
 
         private int count = stack.size ( ) - 1;
 
@@ -48,7 +47,7 @@ public class CustomStack<T> implements Iterable<T> {
 
         @Override
         public T next () {
-            return (T) stack.get ( count-- );
+            return stack.get ( count-- );
         }
     }
 }
