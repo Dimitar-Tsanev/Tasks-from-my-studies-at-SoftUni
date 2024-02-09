@@ -1,6 +1,6 @@
 package aquarium;
 
-public class Fish {
+class Fish {
 
     private String name;
     private String color;

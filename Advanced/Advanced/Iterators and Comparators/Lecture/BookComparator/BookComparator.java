@@ -2,7 +2,7 @@ package BookComparator;
 
 import java.util.Comparator;
 
-public class BookComparator implements Comparator<Book> {
+class BookComparator implements Comparator<Book> {
 
 
     @Override

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Book  {
+class Book  {
     private String title;
     private int year;
     private List<String> authors;

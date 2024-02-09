@@ -3,7 +3,7 @@ package Jar;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class Jar<T>{
+class Jar<T>{
     private Deque<T> content;
 
     public Jar (  ) {

@@ -1,6 +1,6 @@
 package GenericCountMethodStrings;
 
-public class Box <T extends Comparable<T>> {
+class Box <T extends Comparable<T>> {
 
    private T element;
    public Box (T element){

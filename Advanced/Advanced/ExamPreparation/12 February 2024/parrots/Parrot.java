@@ -1,6 +1,6 @@
 package parrots;
 
-public class Parrot {
+class Parrot {
     private String name;
     private String species;
 

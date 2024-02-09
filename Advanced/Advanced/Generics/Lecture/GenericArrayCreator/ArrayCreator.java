@@ -3,7 +3,7 @@ package GenericArrayCreator;
 
 import java.lang.reflect.Array;
 
-public class ArrayCreator {
+class ArrayCreator {
 
     public static <T> T[] create (int length, T item){
         T[] array = (T[]) new Object [length];

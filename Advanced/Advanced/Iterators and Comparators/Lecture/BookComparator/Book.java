@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Book implements Comparable<Book> {
+class Book implements Comparable<Book> {
     private String title;
     private int year;
     private List<String> authors;

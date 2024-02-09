@@ -3,7 +3,7 @@ package aquarium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aquarium {
+class Aquarium {
     private String name;
     private int capacity;
     private int size;

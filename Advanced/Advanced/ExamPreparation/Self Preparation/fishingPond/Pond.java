@@ -3,7 +3,7 @@ package fishingPond;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Pond {
+class Pond {
     private int capacity;
     private List<Fish> fishes;
 

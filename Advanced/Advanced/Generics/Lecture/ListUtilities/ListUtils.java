@@ -3,7 +3,7 @@ package ListUtilities;
 import java.util.Comparator;
 import java.util.List;
 
-public class ListUtils {
+class ListUtils {
 
     public static <T extends Comparable<T>> T getMax( List<T> list) {
         if (list.size () == 0 ){

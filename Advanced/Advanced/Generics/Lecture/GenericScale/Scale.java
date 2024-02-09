@@ -1,6 +1,6 @@
 package GenericScale;
 
-public class Scale <T extends Comparable <T>>{
+class Scale <T extends Comparable <T>>{
     private T left;
     private T right;
 

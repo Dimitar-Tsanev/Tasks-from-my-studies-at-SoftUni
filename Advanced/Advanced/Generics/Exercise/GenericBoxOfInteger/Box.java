@@ -1,6 +1,6 @@
 package GenericBoxOfInteger;
 
-public class Box <T> {
+class Box <T> {
     private T element;
 
     public Box ( T element) {

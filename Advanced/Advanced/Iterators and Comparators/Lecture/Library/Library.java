@@ -3,7 +3,7 @@ package Library;
 import java.util.Iterator;
 
 
-public class Library <Book> implements  Iterable<Book> {
+class Library <Book> implements  Iterable<Book> {
     private Book[] books;
 
     public Library( Book... books ){

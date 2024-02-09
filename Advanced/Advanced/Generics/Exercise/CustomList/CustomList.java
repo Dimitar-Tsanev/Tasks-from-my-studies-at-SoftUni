@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-public class CustomList <T extends Comparable<T>> {
+class CustomList <T extends Comparable<T>> {
 
     private List<T> elements;
 

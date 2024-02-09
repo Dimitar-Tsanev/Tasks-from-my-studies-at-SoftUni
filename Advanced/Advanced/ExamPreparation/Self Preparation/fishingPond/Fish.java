@@ -1,6 +1,6 @@
 package fishingPond;
 
-public class Fish {
+class Fish {
     private String species;
     private int age;
     private String matingSeason;

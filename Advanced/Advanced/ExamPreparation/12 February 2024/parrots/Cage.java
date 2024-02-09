@@ -3,7 +3,7 @@ package parrots;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cage {
+class Cage {
     private String name;
     private int capacity;
     private List<Parrot> data;
