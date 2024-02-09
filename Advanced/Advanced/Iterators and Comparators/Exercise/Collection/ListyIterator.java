@@ -53,6 +53,5 @@ class ListyIterator implements Iterable<String> {
         public String next () {
             return data.get ( counter++ );
         }
-
     }
 }
