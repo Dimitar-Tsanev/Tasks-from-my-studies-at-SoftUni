@@ -5,10 +5,9 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-public class Lake <Integer> implements Iterable<Integer>{
+class Lake implements Iterable<Integer>{
     private List<Integer> data;
 
-    @SafeVarargs
     public Lake ( Integer... numbers ) {
         this.data = new ArrayList<> ();
         Collections.addAll ( data, numbers );
@@ -17,9 +16,9 @@ public class Lake <Integer> implements Iterable<Integer>{
         return data.size ();
     }
     public Iterator<Integer> iterator () {
-        return new Frog<>();
+        return new Frog ();
     }
-    private final class Frog<T> implements Iterator<T>{
+    private class Frog implements Iterator<Integer>{
         private int counter = -2;
         private boolean breaker = true;
         @Override
@@ -36,9 +35,9 @@ public class Lake <Integer> implements Iterable<Integer>{
         }
 
         @Override
-        public T next () {
+        public Integer next () {
             counter += 2;
-            return (T) data.get ( counter );
+            return data.get ( counter );
         }
     }
 }

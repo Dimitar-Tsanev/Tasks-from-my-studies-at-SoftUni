@@ -8,7 +8,7 @@ public class Main {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner ( System.in );
 
-        Lake<Integer> collection = new Lake<> ( );
+        Lake collection = new Lake ( );
 
         String input = scanner.nextLine ( );
 
@@ -17,7 +17,7 @@ public class Main {
                     .map ( Integer::parseInt )
                     .toArray ( Integer[]::new );
 
-            collection = new Lake<> ( elements );
+            collection = new Lake( elements );
 
             input = scanner.nextLine ( );
         }
