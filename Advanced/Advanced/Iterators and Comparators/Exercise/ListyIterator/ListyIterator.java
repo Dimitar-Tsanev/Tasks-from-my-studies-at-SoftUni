@@ -2,11 +2,10 @@ package ListyIterator;
 
 import java.util.*;
 
-public class ListyIterator<String> implements Iterable<String> {
+class ListyIterator implements Iterable<String> {
     private List<String> data;
     private int pointer;
 
-    @SafeVarargs
     public ListyIterator ( String... elements ) {
 
         this.data = new ArrayList<> ( Arrays.asList ( elements ) );
@@ -14,7 +13,7 @@ public class ListyIterator<String> implements Iterable<String> {
         this.pointer = 0;
     }
     public Iterator<String> iterator () {
-        return new CustomIterator<> ( );
+        return new CustomIterator ( );
     }
     public boolean hasNext() {
         return this.pointer < this.data.size() - 1;
@@ -31,7 +30,7 @@ public class ListyIterator<String> implements Iterable<String> {
         System.out.println ( !data.isEmpty ( ) ? data.get ( pointer ) : "Invalid Operation!" );
     }
 
-    private final class CustomIterator<String> implements Iterator<String> {
+    private final class CustomIterator implements Iterator<String> {
         private int counter = 0;
 
         public boolean hasNext () {
@@ -39,8 +38,7 @@ public class ListyIterator<String> implements Iterable<String> {
         }
 
         public String next () {
-            return (String) data.get ( counter++ );
+            return data.get ( counter++ );
         }
-
     }
 }

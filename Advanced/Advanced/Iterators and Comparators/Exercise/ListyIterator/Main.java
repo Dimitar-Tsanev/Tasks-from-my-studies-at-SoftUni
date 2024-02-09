@@ -7,7 +7,7 @@ public class Main {
     public static void main ( String[] args ) {
         Scanner scanner = new Scanner ( System.in );
 
-        ListyIterator<String> listy = new ListyIterator<String> ( );
+        ListyIterator listy = new ListyIterator ( );
 
         String command = scanner.nextLine ( );
 
@@ -15,16 +15,20 @@ public class Main {
             String[] commandData = command.split ( "\\s+" );
 
             switch (commandData[0]) {
+
                 case "Create":
                     String[] elements = Arrays.stream ( commandData ).skip ( 1 ).toArray ( String[]::new );
-                    listy = new ListyIterator<> ( elements );
+                    listy = new ListyIterator ( elements );
                     break;
+
                 case "Move":
                     System.out.println ( listy.move ( ) );
                     break;
+
                 case "HasNext":
                     System.out.println ( listy.hasNext ( ) );
                     break;
+
                 case "Print":
                     listy.print ( );
                     break;
