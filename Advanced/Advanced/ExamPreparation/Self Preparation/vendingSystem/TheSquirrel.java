@@ -53,8 +53,8 @@ public class TheSquirrel {
         printScenario ( "end" );
     }
 
-    private static void printScenario ( String scensario) {
-        switch (scensario){
+    private static void printScenario ( String scenario) {
+        switch (scenario){
             case "out":
                 System.out.println ( "The squirrel is out of the field.");
                 break;
