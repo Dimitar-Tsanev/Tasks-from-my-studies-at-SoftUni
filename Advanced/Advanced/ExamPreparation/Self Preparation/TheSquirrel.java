@@ -1,5 +1,3 @@
-package vendingSystem;
-
 import java.util.Scanner;
 
 public class TheSquirrel {
