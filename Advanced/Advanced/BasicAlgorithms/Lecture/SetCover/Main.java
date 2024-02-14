@@ -1,3 +1,5 @@
+package SetCover;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -29,7 +31,7 @@ public class Main {
         sb.append(String.format("Sets to take (%d):%n", chosenSets.size()));
         for (int[] set : chosenSets) {
             sb.append("{ ");
-            sb.append(Arrays.toString(set).replaceAll("\\[|]", ""));
+            sb.append(Arrays.toString(set).replaceAll("[\\[\\]]", ""));
             sb.append(" }").append(System.lineSeparator());
         }
         System.out.println(sb);
