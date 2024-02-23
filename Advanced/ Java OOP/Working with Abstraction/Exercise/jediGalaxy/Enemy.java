@@ -3,7 +3,6 @@ package jediGalaxy;
 class Enemy {
     private int enemyRow;
     private int enemyCol;
-
     public Enemy (int... coordinates  ) {
         int row = coordinates[0];
         int col = coordinates[1];
@@ -15,15 +14,12 @@ class Enemy {
     public int getRow () {
         return enemyRow;
     }
-
     public int getCol () {
         return enemyCol;
     }
-
     private void setRow ( int row ) {
         this.enemyRow = row;
     }
-
     private void setCol ( int col ) {
         this.enemyCol = col;
     }

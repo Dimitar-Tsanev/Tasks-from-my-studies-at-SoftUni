@@ -16,26 +16,21 @@ public class Main {
         input = scanner.nextLine ( );
 
         while (!"Let the Force be with you".equals ( input ) ) {
-
-            int[] playerCoordinates = getCoordinates ( input );
-
-            player.setPlayerCoordinates ( playerCoordinates );
+            player.setPlayerCoordinates ( getCoordinates ( input ) );
 
             input = scanner.nextLine ( );
 
-            int[] enemyCoordinates = getCoordinates ( input);
+            Enemy enemy = new Enemy ( getCoordinates ( input) );
 
-            Enemy enemy = new Enemy ( enemyCoordinates );
             destroyResources ( enemy, filed);
 
             getterResources ( player,filed );
 
             input = scanner.nextLine ( );
         }
-
         System.out.println ( player.getSumOfResources ());
-
-    }private static void getterResources ( Player player, int[][] field){
+    }
+    private static void getterResources ( Player player, int[][] field){
         while (player.getRow ( ) >= 0 && player.getCol () < field[field.length - 1].length) {
             if (isCoordinatesInTheField ( player.getRow ( ), player.getCol ( ),field ) ) {
                 player.addResources (field[player.getRow ( )][player.getCol ( )] );
