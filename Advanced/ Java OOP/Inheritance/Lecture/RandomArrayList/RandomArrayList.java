@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 class RandomArrayList<T> extends ArrayList<T> {
-    private Random randomInt;
+    private final Random randomInt;
 
     public RandomArrayList ( ) {
         super();
