@@ -3,7 +3,6 @@ package car_shop;
 import java.io.Serializable;
 
 class Seat implements Car, Serializable {
-
     private String model;
     private String color;
     private int horsePower;
@@ -14,20 +13,17 @@ class Seat implements Car, Serializable {
         this.setColor ( color );
         this.setHorsePower ( horsePower );
         this.setCountryOfProduced ( countryOfProduced );
-    }
 
+    }
     private void setModel ( String model ) {
         this.model = model;
     }
-
     private void setColor ( String color ) {
         this.color = color;
     }
-
     private void setHorsePower ( int horsePower ) {
         this.horsePower = horsePower;
     }
-
     private void setCountryOfProduced ( String countryOfProduced ) {
         this.countryOfProduced = countryOfProduced;
     }
@@ -53,6 +49,10 @@ class Seat implements Car, Serializable {
     }
     @Override
     public String toString(){
-        return String.format ( "This is %s produced in %s and have %d tires",getModel (),countryProduced (), Car.TIRES);
+        return String.format (
+                "This is %s produced in %s and have %d tires",
+                getModel (),
+                countryProduced (),
+                Car.TIRES);
     }
 }

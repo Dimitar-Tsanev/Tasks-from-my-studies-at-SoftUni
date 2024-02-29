@@ -6,4 +6,5 @@ interface Car {
     String getColor();
     Integer getHorsePower();
     String countryProduced();
+
 }
