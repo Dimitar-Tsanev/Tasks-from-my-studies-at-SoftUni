@@ -1,7 +1,6 @@
 package math_operation;
 
 class MathOperation {
-
     public int add(int first, int second){
         return first + second;
     }
