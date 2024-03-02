@@ -11,13 +11,11 @@ public class Main {
     }
     private static void printShapeInformation (List<Shape> shapes){
         for ( Shape shape: shapes ){
-            if("Rectangle".equals ( shape.getClass ().getSimpleName () )){
-                Rectangle rectangle = (Rectangle) shape;
+            if( shape instanceof Rectangle rectangle ){
                 System.out.println ( rectangle.getHeight () );
                 System.out.println ( rectangle.getWidth () );
 
-            } else if ( "Circle".equals ( shape.getClass ().getSimpleName () ) ) {
-                Circle circle = (Circle) shape;
+            } else if ( shape instanceof Circle circle  ) {
                 System.out.println (circle.getRadius () );
             }
             System.out.println ( shape.getArea () );
