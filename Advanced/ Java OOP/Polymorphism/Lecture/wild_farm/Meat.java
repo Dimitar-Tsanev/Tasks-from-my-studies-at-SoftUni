@@ -1,6 +1,6 @@
 package wild_farm;
 
-public class Meat extends Food {
+class Meat extends Food {
     public Meat ( Integer quantity ) {
         super ( quantity );
     }

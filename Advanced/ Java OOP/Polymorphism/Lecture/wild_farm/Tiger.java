@@ -1,6 +1,6 @@
 package wild_farm;
 
-public class Tiger extends Felime {
+class Tiger extends Felime {
 
     public Tiger (  String animalName, String animalType, Double animalWeight, String livingRegion ) {
         super ( animalName, animalType, animalWeight, livingRegion);

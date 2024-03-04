@@ -1,6 +1,6 @@
 package wild_farm;
 
-public class Mouse extends Mammal {
+class Mouse extends Mammal {
     public Mouse ( String animalName, String animalType, Double animalWeight, String livingRegion ) {
         super ( animalName, animalType, animalWeight, livingRegion );
     }

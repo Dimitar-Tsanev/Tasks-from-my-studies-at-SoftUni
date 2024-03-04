@@ -2,7 +2,7 @@ package wild_farm;
 
 import java.text.DecimalFormat;
 
-public class Cat extends Felime {
+class Cat extends Felime {
     private String breed;
 
     public Cat ( String animalName, String animalType, Double animalWeight, String livingRegion, String breed ) {

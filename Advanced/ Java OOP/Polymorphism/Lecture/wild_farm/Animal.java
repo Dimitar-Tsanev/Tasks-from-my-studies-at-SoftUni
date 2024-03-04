@@ -1,6 +1,6 @@
 package wild_farm;
 
-public abstract class Animal {
+abstract class Animal {
     private String animalName;
     private String animalType;
     private Double animalWeight;
