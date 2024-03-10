@@ -1,18 +1,19 @@
-package solidLab.p01_SingleResponsibility.p01_DrawingShape;
+package solidLab.p01_SingleResponsibility.p01_DrawingShape.geometric_figures.rectangle;
 
-import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Renderer;
+import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Renderable;
 import solidLab.p01_SingleResponsibility.p01_DrawingShape.interfaces.Shape;
 
-class Rectangle implements Shape, Renderer {
+public class Rectangle implements Shape, Renderable {
     private double width;
     private double height;
     private double area;
+    private StringBuilder renderedRectangle;
 
     public Rectangle ( double width, double height ) {
         this.setWidth ( width );
         this.setHeight ( height );
-        this.setArea ( ShapesMathOperations.calculateRectangleArea ( width, height ) );
-
+        this.setArea ( );
+        this.setRenderedRectangle (  );
     }
 
     private void setHeight ( double height ) {
@@ -28,11 +29,12 @@ class Rectangle implements Shape, Renderer {
         }
         this.width = width;
     }
-
-    private void setArea ( double area ) {
-        this.area = area;
+    private void setRenderedRectangle () {
+        this.renderedRectangle = RectangleRender.renderRectangle (this.getWidth (), this.getHeight ());
     }
-
+    private void setArea (  ) {
+        this.area = RectangleMathOperations.calculateRectangleArea ( this.getWidth (), this.getHeight () ) ;
+    }
     public double getWidth () {
         return this.width;
     }
@@ -48,15 +50,6 @@ class Rectangle implements Shape, Renderer {
 
     @Override
     public StringBuilder render () {
-        StringBuilder shapeBuilder = new StringBuilder ( );
-
-        for ( int vertical = 1 ; vertical <= this.getHeight ( ) ; vertical++ ) {
-            for ( int horizontal = 1 ; horizontal <= this.getWidth ( ) ; horizontal++ ) {
-                shapeBuilder.append ( "* " );
-
-            }
-            shapeBuilder.append ( System.lineSeparator ( ) );
-        }
-        return shapeBuilder;
+        return this.renderedRectangle;
     }
 }
