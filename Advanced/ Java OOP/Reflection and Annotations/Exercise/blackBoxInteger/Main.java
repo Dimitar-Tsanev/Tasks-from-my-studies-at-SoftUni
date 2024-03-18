@@ -16,7 +16,7 @@ public class Main {
         Scanner scanner = new Scanner ( System.in );
         Class<BlackBoxInt> clazz = BlackBoxInt.class;
 
-        Constructor<BlackBoxInt> constructor = clazz.getDeclaredConstructor (  int.class );
+        Constructor<BlackBoxInt> constructor = clazz.getDeclaredConstructor ( int.class );
 
         constructor.setAccessible ( true );
 
@@ -28,13 +28,13 @@ public class Main {
             String command = input.split ( "_" )[0];
             int value = Integer.parseInt ( input.split ( "_" )[1] );
 
-            Method method = clazz.getDeclaredMethod ( command,int.class );
+            Method method = clazz.getDeclaredMethod ( command, int.class );
 
             method.setAccessible ( true );
 
-            method.invoke (object,value );
+            method.invoke ( object, value );
 
-            Field field =  clazz.getDeclaredFields ()[1];
+            Field field = clazz.getDeclaredFields ( )[1];
             field.setAccessible ( true );
             System.out.println ( field.get ( object ) );
 
