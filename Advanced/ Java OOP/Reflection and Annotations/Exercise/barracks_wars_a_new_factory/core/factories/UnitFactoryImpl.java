@@ -1,8 +1,8 @@
-package barracksWars.core.factories;
+package barracks_wars_a_new_factory.core.factories;
 
-import barracksWars.interfaces.Unit;
-import barracksWars.interfaces.UnitFactory;
-import barracksWars.models.units.AbstractUnit;
+import barracks_wars_a_new_factory.interfaces.Unit;
+import barracks_wars_a_new_factory.interfaces.UnitFactory;
+import barracks_wars_a_new_factory.models.units.AbstractUnit;
 
 import java.lang.reflect.InvocationTargetException;
 

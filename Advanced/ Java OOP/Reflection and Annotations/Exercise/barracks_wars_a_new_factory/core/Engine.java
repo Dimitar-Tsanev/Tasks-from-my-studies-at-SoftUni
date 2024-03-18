@@ -1,9 +1,9 @@
-package barracksWars.core;
+package barracks_wars_a_new_factory.core;
 
-import barracksWars.interfaces.Repository;
-import barracksWars.interfaces.Runnable;
-import barracksWars.interfaces.Unit;
-import barracksWars.interfaces.UnitFactory;
+import barracks_wars_a_new_factory.interfaces.Repository;
+import barracks_wars_a_new_factory.interfaces.Runnable;
+import barracks_wars_a_new_factory.interfaces.Unit;
+import barracks_wars_a_new_factory.interfaces.UnitFactory;
 import jdk.jshell.spi.ExecutionControl;
 
 
