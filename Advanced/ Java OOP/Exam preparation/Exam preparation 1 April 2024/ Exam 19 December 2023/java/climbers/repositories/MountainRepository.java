@@ -2,16 +2,13 @@ package climbers.repositories;
 
 import climbers.models.mountain.Mountain;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class MountainRepository implements Repository<Mountain>{
     private Map<String, Mountain> mountains;
 
     public MountainRepository (  ) {
-        this.mountains = new HashMap<> ();
+        this.mountains = new LinkedHashMap<> (  );
     }
 
     @Override
