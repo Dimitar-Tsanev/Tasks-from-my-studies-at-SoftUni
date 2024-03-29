@@ -10,6 +10,10 @@ import java.util.Map;
 public class DiverRepository implements Repository<Diver> {
     private Map<String,Diver> divers;
 
+    public DiverRepository () {
+        this.divers = new LinkedHashMap<> (  );
+    }
+
     @Override
     public Collection<Diver> getCollection () {
         return Collections.unmodifiableCollection ( this.divers.values ());
@@ -17,10 +21,6 @@ public class DiverRepository implements Repository<Diver> {
 
     @Override
     public void add ( Diver diver ) {
-        if (divers == null){
-            this.divers = new LinkedHashMap<> (  );
-
-        }
         divers.putIfAbsent ( diver.getName (), diver );
     }
 

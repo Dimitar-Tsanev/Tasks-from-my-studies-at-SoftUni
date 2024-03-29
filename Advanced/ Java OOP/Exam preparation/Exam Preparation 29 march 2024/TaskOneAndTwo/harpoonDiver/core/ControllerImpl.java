@@ -117,7 +117,7 @@ public class ControllerImpl implements Controller {
 
             String catcH = diver.getSeaCatch ( ).getSeaCreatures ( ).isEmpty ( ) ?
                     "None" :
-                    diver.getSeaCatch ( ).getSeaCreatures ( ).toString ( ).replaceAll ( "[\\[\\]]", "" );
+                    diver.getSeaCatch ( ).getSeaCreatures ( ).stream( ).collect ( Collectors.joining ( ConstantMessages.FINAL_DIVER_CATCH_DELIMITER ));
 
             reportBuilder.append ( String.format ( ConstantMessages.FINAL_DIVER_CATCH, catcH ) );
             reportBuilder.append ( System.lineSeparator ( ) );
