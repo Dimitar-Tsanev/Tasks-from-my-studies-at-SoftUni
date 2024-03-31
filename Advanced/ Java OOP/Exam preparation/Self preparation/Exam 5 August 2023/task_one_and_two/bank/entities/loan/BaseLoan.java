@@ -1,11 +1,19 @@
 package bank.entities.loan;
 
-public abstract class BaseLoan implements Loan {
+public abstract class BaseLoan implements Loan{
     private int interestRate;
     private double amount;
 
-    protected BaseLoan ( int interestRate, double amount ) {
+    public BaseLoan ( int interestRate, double amount ) {
+        this.setInterestRate ( interestRate );
+        this.setAmount ( amount );
+    }
+
+    private void setInterestRate ( int interestRate ) {
         this.interestRate = interestRate;
+    }
+
+    private void setAmount ( double amount ) {
         this.amount = amount;
     }
 

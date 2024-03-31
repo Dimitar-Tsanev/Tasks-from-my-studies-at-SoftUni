@@ -17,6 +17,7 @@ public class ClientFactory {
 
             case "Adult":
                 return new Adult ( clientName,clientID,income );
+
             default:
                 throw new IllegalArgumentException ( ExceptionMessages.INVALID_CLIENT_TYPE );
         }

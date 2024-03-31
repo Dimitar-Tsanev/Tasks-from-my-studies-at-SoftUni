@@ -15,6 +15,7 @@ public class BankFactory {
 
             case "BranchBank":
                 return new BranchBank ( name );
+
             default:
                 throw new NullPointerException ( ExceptionMessages.INVALID_BANK_TYPE );
         }

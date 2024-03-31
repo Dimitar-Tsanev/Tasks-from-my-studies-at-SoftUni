@@ -15,6 +15,7 @@ public class LoanFactory {
 
             case "MortgageLoan":
                 return new MortgageLoan (  );
+
             default:
                 throw new IllegalArgumentException ( ExceptionMessages.INVALID_LOAN_TYPE );
         }
