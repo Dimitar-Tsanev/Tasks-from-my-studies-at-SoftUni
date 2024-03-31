@@ -15,7 +15,6 @@ import bank.factories.LoanFactory;
 import bank.repositories.LoanRepository;
 import bank.repositories.Repository;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -94,7 +93,7 @@ public class ControllerImpl implements Controller {
     public String getStatistics () {
         StringBuilder report = new StringBuilder ( );
         banks.forEach ( b -> report.append ( b.getStatistics ( ) ) );
-        return report.toString ( );
+        return report.toString ( ).trim ();
     }
 
     private Bank getBank ( String bankName ) {
