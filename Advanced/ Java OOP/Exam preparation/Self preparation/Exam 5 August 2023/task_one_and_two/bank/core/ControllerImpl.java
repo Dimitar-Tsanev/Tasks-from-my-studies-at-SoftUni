@@ -19,40 +19,38 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class ControllerImpl implements Controller {
-    private Repository loans;
+    private Repository loanRepository;
     private Collection<Bank> banks;
+
+    public ControllerImpl () {
+        this.loanRepository = new LoanRepository ( );
+        this.banks = new ArrayList<> ( );
+    }
 
     @Override
     public String addBank ( String type, String name ) {
-        if ( this.banks == null ) {
-            this.banks = new ArrayList<> ( );
-        }
         banks.add ( BankFactory.createBank ( type, name ) );
         return String.format ( ConstantMessages.SUCCESSFULLY_ADDED_BANK_OR_LOAN_TYPE, type );
     }
 
     @Override
     public String addLoan ( String type ) {
-        if ( this.loans == null ) {
-            this.loans = new LoanRepository ( );
-        }
-        this.loans.addLoan ( LoanFactory.createLoan ( type ) );
+        this.loanRepository.addLoan ( LoanFactory.createLoan ( type ) );
 
         return String.format ( ConstantMessages.SUCCESSFULLY_ADDED_BANK_OR_LOAN_TYPE, type );
     }
 
     @Override
     public String returnedLoan ( String bankName, String loanType ) {
-        Bank bank = getBank ( bankName );
-        Loan loan = loans.findFirst ( loanType );
+        Loan loan = this.loanRepository.findFirst ( loanType );
 
         if ( loan == null ) {
             throw new IllegalArgumentException ( String.format ( ExceptionMessages.NO_LOAN_FOUND, loanType ) );
         }
 
-        this.loans.removeLoan ( loan );
+        Bank bank = getBank ( bankName );
         bank.addLoan ( loan );
-
+        this.loanRepository.removeLoan ( loan );
         return String.format ( ConstantMessages.SUCCESSFULLY_ADDED_CLIENT_OR_LOAN_TO_BANK, loanType, bankName );
     }
 
@@ -93,13 +91,12 @@ public class ControllerImpl implements Controller {
     public String getStatistics () {
         StringBuilder report = new StringBuilder ( );
         banks.forEach ( b -> report.append ( b.getStatistics ( ) ) );
-        return report.toString ( ).trim ();
+        return report.toString ( ).trim ( );
     }
 
     private Bank getBank ( String bankName ) {
         return this.banks.stream ( )
                 .filter ( b -> b.getName ( ).equals ( bankName ) )
-                .findAny ( )
-                .get ( );
+                .findFirst ().orElse ( null );
     }
 }
