@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b9dabb1-aaa1-4afe-9612-36fd0d66ba64" name="Changes" comment="task 1 done">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Loser.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Advanced/ Java OOP/Exam preparation/Self preparation/Exam 15 August 2021/tak_one_and_two/restaurant/entities/drinks/BaseBeverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Advanced/ Java OOP/Exam preparation/Self preparation/Exam 15 August 2021/tak_one_and_two/restaurant/entities/drinks/BaseBeverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2dzQPpZs7TiXfmQL21MnOkbUw5p" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AxeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.BankTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarShopTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarShopTests.testFindAllCarByModelShouldReturnCarsWithTheGivenModel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarShopTests.testFindAllCarsWithMaxHorsePowerShouldReturnCarsWithMoreThenGivenNumber.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.CarShopTests.testGetTheMostLuxuryCarShouldReturnMostExpensiveCar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClimbingTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClimbingTests.testAddRockClimberShouldThrowWhenNoCapacity.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testAddWithNullComputerShouldThrow.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testConstructorShouldInitializeCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testGetComputerShouldThrowWithNullManufacturer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testGetComputersShouldReturnCorrectCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testRemoveShouldRemoveCorrectComputer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testRemoveShouldRemoveShouldNotRemoveIfComputerIsNotInCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComputerManagerTests.testRemoveShouldThrowIfComputerIsNotInCollection.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DivingTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.aliveDummyDoNotGivesLoot.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.aliveDummyDoNotGivesXp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.deadDummyCanNotBeAttacked.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.deadDummyGivesLoot.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.deadDummyGivesXp.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.dummyLosesHealthWhenAttacked.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DummyTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HeroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HeroTest.heroGainsExperienceWhenTargetDies.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.HeroTest.heroGainsLootWhenTargetDies.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ServiceTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShopTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ShopTest.testGetShelvesShouldReturnShelves.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TeamTests.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TeamTests.testPlayerForAnotherTeamShouldReturnPlayer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TeamTests.testRemoveShouldSuccessfullyRemovePlayer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TeamTests.testRemoveShouldThrowWhenNameIsNotInTeam.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Tasks-from-my-studies-at-SoftUni [test].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Y-drivers and software/workjava/Tasks-from-my-studies-at-SoftUni/Advanced/ Java OOP/Exam preparation/Self preparation/Exam&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.spelling&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\Exam" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\Exam 15 August 2021\tak_one_and_two\restaurant" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\Exam 15 August 2021" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\Exam 9 April 2022" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\Exam 10 December 2022" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Self preparation\15 August 2023\main" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\Exam preparation\Exam Preparation 29 march 2024\TaskOneAndTwo" />
+      <recent name="D:\Y-drivers and software\workjava\Tasks-from-my-studies-at-SoftUni\Advanced\ Java OOP\UnitTesting\Lecture" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vehicleShop.factories" />
+      <recent name="bank.factories" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CarShopTests">
+    <configuration name="CarShopTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks-from-my-studies-at-SoftUni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carShop" />
+      <option name="MAIN_CLASS_NAME" value="carShop.CarShopTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarShopTests.testFindAllCarByModelShouldReturnCarsWithTheGivenModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks-from-my-studies-at-SoftUni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carShop" />
+      <option name="MAIN_CLASS_NAME" value="carShop.CarShopTests" />
+      <option name="METHOD_NAME" value="testFindAllCarByModelShouldReturnCarsWithTheGivenModel" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CarShopTests.testGetTheMostLuxuryCarShouldReturnMostExpensiveCar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks-from-my-studies-at-SoftUni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="carShop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="carShop" />
+      <option name="MAIN_CLASS_NAME" value="carShop.CarShopTests" />
+      <option name="METHOD_NAME" value="testGetTheMostLuxuryCarShouldReturnMostExpensiveCar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks-from-my-studies-at-SoftUni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shopAndGoods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shopAndGoods" />
+      <option name="MAIN_CLASS_NAME" value="shopAndGoods.ShopTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopTest.testGetShelvesShouldReturnShelves" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Tasks-from-my-studies-at-SoftUni" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shopAndGoods.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="shopAndGoods" />
+      <option name="MAIN_CLASS_NAME" value="shopAndGoods.ShopTest" />
+      <option name="METHOD_NAME" value="testGetShelvesShouldReturnShelves" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ShopTest" />
+        <item itemvalue="JUnit.ShopTest.testGetShelvesShouldReturnShelves" />
+        <item itemvalue="JUnit.CarShopTests" />
+        <item itemvalue="JUnit.CarShopTests.testFindAllCarByModelShouldReturnCarsWithTheGivenModel" />
+        <item itemvalue="JUnit.CarShopTests.testGetTheMostLuxuryCarShouldReturnMostExpensiveCar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-corretto-20.0.2.1-f644763e9732-27d99999" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b9dabb1-aaa1-4afe-9612-36fd0d66ba64" name="Changes" comment="" />
+      <created>1711008405835</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711008405835</updated>
+    </task>
+    <task id="LOCAL-00001" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711009227263</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711009227263</updated>
+    </task>
+    <task id="LOCAL-00002" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711009378297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711009378297</updated>
+    </task>
+    <task id="LOCAL-00003" summary="task 4 done">
+      <option name="closed" value="true" />
+      <created>1711023130557</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711023130557</updated>
+    </task>
+    <task id="LOCAL-00004" summary="task 5 done">
+      <option name="closed" value="true" />
+      <created>1711026406660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711026406660</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add Mockito">
+      <option name="closed" value="true" />
+      <created>1711029015187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1711029015187</updated>
+    </task>
+    <task id="LOCAL-00006" summary="task 6 done">
+      <option name="closed" value="true" />
+      <created>1711115064168</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1711115064168</updated>
+    </task>
+    <task id="LOCAL-00007" summary="task 1 and 2 done (task 2 getting 136 points of 150)">
+      <option name="closed" value="true" />
+      <created>1711465755860</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1711465755860</updated>
+    </task>
+    <task id="LOCAL-00008" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711531583059</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711531583059</updated>
+    </task>
+    <task id="LOCAL-00009" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711532521152</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1711532521152</updated>
+    </task>
+    <task id="LOCAL-00010" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711544963704</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1711544963704</updated>
+    </task>
+    <task id="LOCAL-00011" summary="task 1 and 2 done (task 2 gets 137 points of 150">
+      <option name="closed" value="true" />
+      <created>1711560787320</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1711560787320</updated>
+    </task>
+    <task id="LOCAL-00012" summary="task 1 and 2 done (task 2 gets 137 points of 150">
+      <option name="closed" value="true" />
+      <created>1711622053880</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1711622053880</updated>
+    </task>
+    <task id="LOCAL-00013" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1711715130549</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1711715130549</updated>
+    </task>
+    <task id="LOCAL-00014" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1711716570932</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1711716570932</updated>
+    </task>
+    <task id="LOCAL-00015" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1711719378349</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1711719378349</updated>
+    </task>
+    <task id="LOCAL-00016" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711723928084</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711723928084</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Renamed folder">
+      <option name="closed" value="true" />
+      <created>1711799309454</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1711799309454</updated>
+    </task>
+    <task id="LOCAL-00018" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1711822413978</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1711822413978</updated>
+    </task>
+    <task id="LOCAL-00019" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711886450594</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1711886450594</updated>
+    </task>
+    <task id="LOCAL-00020" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711889921139</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1711889921139</updated>
+    </task>
+    <task id="LOCAL-00021" summary="task 1 done&#10;task 2 gets 125 of 150 point">
+      <option name="closed" value="true" />
+      <created>1711902090587</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1711902090587</updated>
+    </task>
+    <task id="LOCAL-00022" summary="task 1 done&#10;task 2 gets 125 of 150 point">
+      <option name="closed" value="true" />
+      <created>1711907856873</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1711907856873</updated>
+    </task>
+    <task id="LOCAL-00023" summary="task 1 done&#10;task 2 gets 137 of 150 point">
+      <option name="closed" value="true" />
+      <created>1711909359552</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1711909359552</updated>
+    </task>
+    <task id="LOCAL-00024" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1711973956049</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1711973956049</updated>
+    </task>
+    <task id="LOCAL-00025" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1712052198793</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1712052198793</updated>
+    </task>
+    <task id="LOCAL-00026" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1712053741458</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1712053741458</updated>
+    </task>
+    <task id="LOCAL-00027" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1712061081352</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1712061081352</updated>
+    </task>
+    <task id="LOCAL-00028" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1712075453570</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1712075453570</updated>
+    </task>
+    <task id="LOCAL-00029" summary="task 1 and 2 (task 2 gets 133 from 150 points)">
+      <option name="closed" value="true" />
+      <created>1712304763579</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1712304763579</updated>
+    </task>
+    <task id="LOCAL-00030" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1712304830148</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1712304830148</updated>
+    </task>
+    <task id="LOCAL-00031" summary="task 1 and 2 done">
+      <option name="closed" value="true" />
+      <created>1712318922644</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1712318922644</updated>
+    </task>
+    <task id="LOCAL-00032" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1712318948321</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1712318948321</updated>
+    </task>
+    <task id="LOCAL-00033" summary="task 3 done">
+      <option name="closed" value="true" />
+      <created>1712327627031</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1712327627031</updated>
+    </task>
+    <task id="LOCAL-00034" summary="task 1 done">
+      <option name="closed" value="true" />
+      <created>1712344574722</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1712344574722</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task 4 done" />
+    <MESSAGE value="task 5 done" />
+    <MESSAGE value="add Mockito" />
+    <MESSAGE value="task 6 done" />
+    <MESSAGE value="task 1 and 2 done (task 2 getting 136 points of 150)" />
+    <MESSAGE value="task 1 and 2 done (task 2 gets 137 points of 150" />
+    <MESSAGE value="Renamed folder" />
+    <MESSAGE value="task 1 done&#10;task 2 gets 125 of 150 point" />
+    <MESSAGE value="task 1 done&#10;task 2 gets 137 of 150 point" />
+    <MESSAGE value="task 1 and 2 (task 2 gets 133 from 150 points)" />
+    <MESSAGE value="task 1 and 2 done" />
+    <MESSAGE value="task 3 done" />
+    <MESSAGE value="task 1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 1 done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/Advanced/ Java OOP/Exam preparation/Self preparation/Exam 15 August 2023/src/main/java/handball/Team.java</url>
+          <line>8</line>
+          <properties field="position" class="handball.Team" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Advanced/ Java OOP/Exam preparation/Self preparation/Exam 16 August 2020/task_one_and_two/onlineShop/models/products/computers/BaseComputer.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/Advanced/ Java OOP/Exam preparation/Self preparation/Exam 16 August 2020/src/test/java/computers/ComputerManagerTests.java</url>
+          <line>16</line>
+          <properties class="computers.ComputerManagerTests" method="setUp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -5,7 +5,7 @@ import restaurant.entities.drinks.interfaces.Beverages;
 
 import static restaurant.common.ExceptionMessages.*;
 
-public abstract class BaseBeverage implements Beverages {
+public class BaseBeverage implements Beverages {
     private String name;
     private int counter;
     private double price;
@@ -57,4 +57,5 @@ public abstract class BaseBeverage implements Beverages {
     public String getBrand () {
         return this.brand;
     }
+ 
 }
