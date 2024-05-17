@@ -1,0 +1,28 @@
+*{
+    background-color: lightgray;
+}
+h1{
+    color: #4646db;
+}
+
+p{
+    font-size: 20px;
+}
+.highlight {
+    background-color: #91b0f1;
+}
+#special-paragraph{
+    font-style: italic;
+}
+div {
+    background-color: aqua;
+}
+ul {
+    list-style-type: square;
+    background-color: aqua;
+    font-size: 20px;
+}
+li{
+    background-color: aqua;
+    color: #ffffff;
+}
