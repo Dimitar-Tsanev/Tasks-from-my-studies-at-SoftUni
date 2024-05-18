@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-*">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link rel="stylesheet" href="combinators.css">
+    <title>combinators</title>
+</head>
+
+<body>
+    <header>
+        <h3>Descendant Combinator:</h3>
+        <p>Use the descendant combinator to style <code>&lt;p&gt;</code> elements that are descendants of <code>&lt;div&gt;</code> elements, applying a specific font color.</p>
+        <h3>Child Combinator:</h3>
+        <p>Use the child combinator to style <code>&lt;li&gt;</code> elements that are direct children of <code>&lt;ul&gt;</code> elements, applying a unique list-style-type.</p>
+        <h3>Adjacent Sibling Combinator:</h3>
+        <p>Use the adjacent sibling combinator to style a <code>&lt;p&gt;</code> element that immediately follows another <code>&lt;p&gt;</code> element, changing its background color.</p>
+        <h3>General Sibling Combinator:</h3>
+        <p>Use the general sibling combinator to style <code>&lt;span&gt;</code> elements that are siblings of a <code>&lt;p&gt;</code> element, changing their font weight.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Task start after here.</h2>
+            
+            <div>
+                <p>This is a paragraph inside a <code>&lt;div&gt;</code>.</p>
+            </div>
+
+            <p>This paragrap is after <code>&lt;div&gt;</code></p>
+
+            <p>This paragraph follows another paragraph.<span> <code>&lt;span&gt;</code> inside a paragraph.</span></p>
+
+            <span>This <code>&lt;span&gt;</code> is a sibling of paragraphs.</span>
+
+            <ul>
+                <li>List item 1</li>
+                <li>
+                    List item 2
+                    <ul>
+                        <li>Nested list item 1</li>
+                        <li>Nested list item 2</li>
+                    </ul>
+                </li>
+
+                <li>List item 3</li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
