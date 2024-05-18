@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="compound-selectors.css">
+    <title>compound-selectors</title>
+</head>
+
+<body>
+    <header>
+        <h3>Class and Element Combination:</h3>
+        <p>Use a compound selector that combines a class selector with an element selector to style <code>&lt;p&gt;</code> elements with a specific class, applying a unique color and font size.</p>
+        <h3>ID and Element Combination:</h3>
+        <p> a compound selector that combines an ID selector with an element selector to style a <code>&lt;div&gt;</code> element with a specific ID, changing its background color and padding.</p>
+        <h3>Attribute and Class Combination:</h3>
+        <p>Use a compound selector that combines an attribute selector (e.g., [type="text"]) with a class selector to style <code>&lt;input&gt;</code> elements of type text with a specific class, modifying their border color and padding.</p>
+        <h3>Multiple Class Combination:</h3>
+        <p>Use a compound selector to target elements with two specific classes applied simultaneously, changing their font style and weight.</p>
+        <h3>Specificity Demonstration:</h3>
+        <p>Apply multiple styles to an element with increasing specificity using compound selectors, demonstrating how specificity affects the final styling.</p>
+    </header>
+
+    <section>
+        <h2>Task starts after here</h2>
+
+        <div id="main-content">
+            <p class="text-highlight">This is a highlighted paragraph.</p>
+            <p>This is a normal paragraph.</p>
+            
+            <div id="special-box" class="box">
+                Special content goes here.
+            </div>
+
+            <ul>
+                <li class="important-item">Important Item 1</li>
+                <li>Item 2</li>
+                <li class="important-item fancy">Important Item 3</li>
+            </ul>
+        
+            <p>
+                <a class="fancy" href="#">Fancy link that goes to this page</a>
+            </p> 
+
+            <div>
+                <a href="https://softuni.bg/">Fancy link that goes to the SoftUni website</a>
+            </div>
+
+            <p class="fancy important-item text-highlight">Paragraph with multiple classes!</p>
+        
+            <input type="text" class="input-text" placeholder="type here...">
+            <input type="text" class="input-text special-input" placeholder="special-input...">
+
+        </div>
+    </section>
+   
+</body>
+
+</html>
