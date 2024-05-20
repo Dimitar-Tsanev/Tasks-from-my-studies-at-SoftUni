@@ -1,0 +1,29 @@
+body{
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px;
+    padding: 10px;
+}
+section{
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: solid 1px #757575;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin: 10px;
+}
+.Author{
+    color:#757575;
+}
+header + p {
+    color: white;
+    background-color: #757575;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+}
+time {
+    font-style: italic;
+    font-weight: bold;
+    color: #757575;
+}
