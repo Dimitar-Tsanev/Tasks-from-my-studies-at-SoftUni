@@ -1,0 +1,20 @@
+div{
+    border: 3px solid darkgray;
+    margin-bottom: 1em;
+}
+p{
+    padding-left: 0.5em;
+}
+div:first-of-type{
+    width: 300px;
+}
+div + div{
+    width: 50%;
+}
+div:nth-of-type(3){
+    width: 50vw;
+}
+div:last-of-type{
+    min-width: 100px;
+    max-width: 300px;
+}
