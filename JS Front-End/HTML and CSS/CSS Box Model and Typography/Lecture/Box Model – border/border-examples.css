@@ -1,0 +1,22 @@
+div{
+    width: 20vw;
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+div:first-of-type{
+    border: 4px solid black;
+}
+div:nth-of-type(2){
+    border: 3px dashed #333;
+
+}
+div:nth-of-type(3){
+    border: 2px dotted #666;
+}
+div:last-of-type{
+    border-top: 3px dashed #333;
+    border-bottom: 3px dashed #333;
+    border-left: 4px solid #000;
+    border-right: 4px solid #000;
+}
