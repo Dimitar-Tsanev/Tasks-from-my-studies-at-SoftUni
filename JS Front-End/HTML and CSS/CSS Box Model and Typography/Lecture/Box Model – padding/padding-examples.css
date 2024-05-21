@@ -1,0 +1,14 @@
+div{
+    border: 1px solid darkgray;
+    margin: 0.5em;
+    margin-bottom: 1.5em;
+}
+div:first-of-type{
+    padding: 20px;
+}
+div:nth-child(2){
+    padding: 10px 30px 20px 40px;
+}
+div:last-of-type{
+    padding: 5%;
+}
