@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+    margin: 2.5em auto;
+    width: 50vw;
+}
+div{
+    border: 0.1em dashed #5f6262;
+    padding: 1.8em;
+    padding-top: 0;
+}
+span{
+    display: block;
+    text-align: left;
+    margin-left: -1.5em;
+    margin-bottom: 0.7em;
+}
+.margin{
+    max-width: 575px;
+    max-height: 250px;
+    background-color: #ff966f;
+  
+}
+.border{
+    background-color: #ffe8c6;
+    
+}
+.padding{
+    background-color: #85eb85;
+   
+}
+.content{
+    background-color: #a3d2e2;
+    padding-bottom: 0;
+}
+p{
+    text-align: center;
+}
