@@ -1,0 +1,35 @@
+body{
+    padding: 2em;
+}
+div{
+    max-width: 900px;
+    margin: 0 auto;
+}
+details{
+    border: 1px solid lightgrey;
+    padding: 1em 1.2em 1em 1.2em ;
+}
+details + details{
+    border-top: 0;
+}
+summary{
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    list-style-position: outside;
+    list-style-type: '>' ;
+    font-weight: 700;
+}
+details[open] > summary{
+    list-style-type: 'v';
+
+}
+[open] > summary::marker{
+    font-size: 0.8em;
+    font-weight: bold;
+}
+summary + p{
+    margin-top: 1em;
+}
+p{
+    padding-bottom: 1em;
+}
