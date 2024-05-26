@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #ebebeb;
+    padding: 2em;
+    
+}
+span{
+    display: block;
+}
+.card{
+    display: block;
+    width: 23em;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 0.3em;
+    text-decoration: none;
+    color: #2d2d2d;
+    background-color: #fff;
+    box-shadow: 0 0 0.3em 0.2em rgba(0, 0, 0, 0.1);
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.content{
+    padding: 1em 2em 2em 2em;
+}
+strong{
+    display: block;
+    font-size: 19px;
+    padding-bottom: 0.5em;
+}
+.footer{
+    padding: 2em;
+    padding-top: 0;
+}
+.footer > span:first-child{
+    font-weight: bold;
+}
+.footer > span:last-of-type{
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
