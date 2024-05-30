@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5 'Lato', sans-serif;
+}
+body{
+    background-color: #eee;
+    padding: 3em;
+}
+aside {
+    flex-basis: 20em;
+}
+header, footer, aside, .main-content{
+    border: 1px solid #aaaaaa;
+    margin: 0.5em;
+    padding: 1.5em;
+    border-radius: 0.3em;
+}
+.content-box{
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+    margin: 0 auto 3em;
+    max-width: 85vw;
+}
+.flex-order{
+    display: flex; 
+}
+.flex-order .main-content{
+    flex: 1 1 30em;
+}
+.content-box:nth-of-type(2n) .flex-order>.main-content{
+    order: 2;
+}
