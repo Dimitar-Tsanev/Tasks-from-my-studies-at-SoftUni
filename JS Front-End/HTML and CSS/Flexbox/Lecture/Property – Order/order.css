@@ -1,0 +1,30 @@
+.flex-container{
+    max-width: 400px;
+    padding: 1em;
+    border: 2px solid blue;
+    display: flex;
+    align-items: flex-start;
+}
+.flex-item{
+    background-color: #eee;
+    padding: 20px;
+    border: 2px solid #000;
+}
+.custom-order .flex-item:first-of-type{
+    order: 5;
+}
+.custom-order .flex-item:nth-of-type(2){
+    order: 3;
+}
+.custom-order .flex-item:nth-of-type(3){
+    order: 1;
+}
+.custom-order .flex-item:nth-of-type(4){
+    order: 6;
+}
+.custom-order .flex-item:nth-of-type(5){
+    order: 2;
+}
+.custom-order .flex-item:last-of-type{
+    order: 4;
+}
