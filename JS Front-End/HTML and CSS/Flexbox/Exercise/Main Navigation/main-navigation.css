@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5 'Lato', sans-serif;
+}
+body{
+    padding: 2em;
+}
+nav{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    padding: 0.2em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.5em 0.3em rgba(0, 0, 0, 0.1);
+
+}
+ul{
+    display: flex;
+}
+li{
+    list-style-type: none;
+    display: block;
+    position: relative;
+}
+a{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.3em;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #ff8c00;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    display: block; 
+}
+nav > ul{
+    gap: 0.5em;
+}
+ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    display: none;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.5em 0.3em rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    min-width: 18em;
+}
+ul ul ul{
+    flex-direction: column;
+    display: none;
+    left: 100%;
+    top: 0;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.5em 0.3em rgba(0, 0, 0, 0.1);
+    min-width: 17em;
+}
+a:hover { 
+    background-color: #ff8c00;
+    color: #fff;
+    border-radius: 0.3em;
+}
+li:hover > a {
+    position: relative;
+    z-index: 300;
+}
+li:hover > ul{
+    display: flex;
+}
