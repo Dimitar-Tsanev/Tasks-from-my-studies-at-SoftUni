@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 'Lato', sans-serif;
+}
+body{
+    background-color: #eee;
+    padding: 2em 0;
+    
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 0 0 30%;
+}
+.container{
+    background-color: white;
+    padding: 0.1em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0green, 0blue, 0.1);
+    max-width: 80vw;
+    margin: 0 auto;
+    overflow: auto;
+    
+}
+.week{
+    flex: 1 0 20em;
+}
+.title {
+    flex: 0 0 100%;
+}
+.calendar-container{
+    display: flex;
+    flex-grow: 1;
+}
+.week div, aside div {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 1.5em;
+    flex-grow: 1;
+}
+.week div:not(.title){
+    flex: 1 0 10em;
+}
+.calendar-container .week{
+    display: flex;
+    flex-wrap: wrap;
+}
