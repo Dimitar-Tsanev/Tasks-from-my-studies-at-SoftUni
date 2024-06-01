@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.8 'Lato', sans-serif;
+}
+
+body {
+    background-color: #eee;
+    padding: 3em;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+span{
+    font-weight:900;
+    font-size: 18px;
+}
+i{
+    font-size: 3.5em;
+}
+p{
+    opacity: 40%;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 70%;
+}
+.site {
+    display: flex;
+    max-width: 60%;
+    min-height: 60%;
+    margin: 0 auto;
+    gap: 2em;
+}
+.main-quates {
+    min-width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2em;
+    flex-grow: 1;
+}
+
+.quote {
+    display: flex;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0 0.2em 0.05em rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 1em;
+}
+.avatar {
+    align-self: center;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 0.2em 0.05em rgba(0, 0, 0, 0.1);
+    background-color: #009407;
+    border-radius: 50%;
+    width: 50%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.quote.aside{
+    flex-direction: column;
+
+}
+.quote.aside .avatar{
+    align-self: flex-start;
+}
