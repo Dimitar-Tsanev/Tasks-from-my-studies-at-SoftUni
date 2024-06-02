@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 'Lato', sans-serif;
+}
+body{
+    background-color: #eee;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+article{
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 0.3em;
+    padding: 2em;
+    margin: 0 auto;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+}
+ul{
+    padding-left: 1.5em;
+}
+header, p, ul{
+    margin-bottom: 1.2em;
+}
