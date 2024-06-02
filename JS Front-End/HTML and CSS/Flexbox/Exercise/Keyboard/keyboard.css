@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    min-width: 2.7em;
+    border: 1px solid #fff;
+    flex-grow: 1;
+    background-color: #fff;
+    box-shadow: 0 0.3em 0 0 rgba(41, 41, 41, 0.2);
+    border-radius: 0.3em;
+    
+}
+.keyboard{
+    border: 1px solid #999;
+    border-radius: 0.8em;
+    box-shadow: 0 0.3em 0 0 rgba(0, 0, 0, 0.3);
+    background-color: #ddd;
+    margin: 0 auto;
+    width: 835px;
+    height: 330px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 0.8em;
+    max-height: 2.5em;
+    border: #fff solid black;
+}
+.right-shift{
+    min-width: 10em;
+}
+.enter{
+    min-width: 3em;
+    position: relative;
+    border-bottom-right-radius: 0;
+}
+.enter-phantom{
+    width: 1.7em;
+}
+.enter::after{
+    content: '';
+    padding: 0.7em;
+    background-color: inherit;
+    border: inherit;
+    border-top: none;
+    box-shadow: inherit;
+    display: block;
+    position: absolute;
+    border-bottom-left-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    width: 2.7em;
+    height: 2.5em;
+    top: 100%;
+    left: 0.7em;
+   
+}
+button:hover, .special-button:hover, .function-keys>button:hover{
+    background-color: #555;
+    color: #fff;
+    border: 1px solid black;
+    box-shadow: 0 0.3em 0 0 rgba(41, 41, 41, 0.8);
+    
+}
+.function-keys{
+    max-height: 2em;
+    
+}
+.final>button{
+    flex-grow: 0;
+    min-width: 5em;
+}
+
+.final .space-bar{
+    flex-grow: 1;
+}
+.function-keys>button, .special-button{
+    background-color: #eee;
+    border: 1px solid #eee ;
+}
