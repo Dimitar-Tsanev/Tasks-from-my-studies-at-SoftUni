@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 'Lato',sans-serif;
+}
+body{
+    border: 2px solid green;
+    padding: 2em;
+    height: 100vh;
+    display: flex;
+  
+}
+header, main, footer{
+    border: 2px solid blue;
+    padding: 2em;
+    
+}
+.web-page{
+    display: flex;
+    width: 100%;
+    gap: 2em;
+    flex-direction: column;
+ 
+}
+main{
+    flex:1 1 auto;
+}
