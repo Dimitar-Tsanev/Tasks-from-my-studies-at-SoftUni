@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@media all {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        padding: 2em;
+        font: 14px/1.5 Lato, sans-serif;
+    }    
+    section{
+        margin-bottom: 1.5em;
+    }
+    p{
+        padding-bottom: 1.5em;
+    }
+    body::before{
+       background-color: #369;
+       color: #fff;
+       padding: 1em 1.5em;
+       margin-bottom: 2em;
+       border-radius: 0.3em;
+
+    }
+    span{
+        display: block;
+    }
+    .padding{
+        padding-left: 1.5em;
+    }
+    .more-padding{
+        padding-left: 3em;
+    }
+    .introduction>a{
+        display: block;
+        padding-bottom: 1.5em;
+        text-decoration: none;
+        color: inherit;
+    }
+ 
+}
+@media only screen and (min-width: 800px) {
+    body::before {
+        display: block;
+        content: 'The device is using a screen and the viewport width is larger than 800px';
+    }
+}    
+@media not (max-width: 1200px) {
+    body::before {
+        display: block;
+        content: 'The viewport width is larger than 1200px';
+    }
+}              
+
+    
