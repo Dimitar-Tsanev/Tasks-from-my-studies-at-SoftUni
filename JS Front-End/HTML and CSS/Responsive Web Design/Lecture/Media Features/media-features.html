@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-features.css">
+    <title>Media features</title>
+</head>
+
+<body>
+
+    <article>
+        <h1>Media Features</h1>
+        <div class="introduction">
+            <p>Not complete list</p>
+            <a href="ttps://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features">ttps://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_features</a>
+        </div>
+        <section class="content">
+            <h2>hover</h2>
+            <p>Does the primary input mechanism allow the user to hover over elements? Added in Media Queries Level 4.</p>
+            <code>
+                <span>@media (hover: none) {</span>
+                <span class="padding">body::before {</span>
+                <span class="padding more-padding">display: block;</span>
+                <span class="padding more-padding">content: 'This device doesn't support hover';</span>
+                <span class="padding">}</span>
+                <span>}</span>
+       
+            </code>
+        </section>
+        <section class="content">
+            <h2>orientation</h2>
+            <p>Orientation of the viewport.</p>
+            <code>
+                <span>@media (orientation: landscape) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The device is in landscape orientation';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+        <section class="content">
+            <h2>width</h2>
+            <p>Width of the viewport including width of scrollbar.</p>
+            <code>
+                <span>@media (width: 600px) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The viewport width is 600px';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+        <section class="content">
+            <h2>height</h2>
+            <p>Height of the viewport.</p>
+            <code>
+                <span>@media (height: 800px) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The viewport height is 800px';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+
+    </article>
+
+</body>
+</html>
