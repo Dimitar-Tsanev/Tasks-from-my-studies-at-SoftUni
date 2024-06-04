@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-types.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <article>
+        <h1>Media Types</h1>
+        <div class="introduction">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types">https://developer.mozilla.org/en-US/docs/Web/CSS/@media#media_types</a>
+            <p>Media types describe the general category of a device. Except when using the not or only logical operators, the media type is optional and the all type is implied.</p>
+        </div>
+        <section class="content">
+            <h2>all</h2>
+            <p>Suitable for all devices</p>
+            <code>
+                <span>@media all {</span>
+                <span class="padding">* {</span>
+                <span class="padding more-padding">padding: 0;</span>
+                <span class="padding more-padding">margin: 0;</span>
+                <span class="padding more-padding">box-sizing: border-box;</span>
+                <span class="padding">}</span>
+                <span class="padding">body {</span>
+                <span class="padding more-padding">padding: 2em;</span>
+                <span class="padding more-padding">font: 14px/1.5 Lato, sans-serif;</span>
+                <span class="padding">}</span>
+                <span class="padding">p {</span>
+                <span class="padding more-padding">padding-bottom: 1.5em;</span>
+                <span class="padding">}</span>
+                <span>}</span>
+       
+            </code>
+        </section>
+        <section class="content">
+            <h2>print</h2>
+            <p>Intended for paged material and documents viewed on a screen in print preview mode</p>
+            <code>
+                <span>@media print {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The page is using a print preview or it was printed';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+        <section class="content">
+            <h2>screen</h2>
+            <p>Intended primarily for screens
+            </p>
+            <code>
+                <span>@media screen {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The page is being shown on a screen';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+
+    </article>
+
+</body>
+</html>
