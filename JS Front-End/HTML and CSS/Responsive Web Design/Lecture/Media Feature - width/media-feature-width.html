@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media-feature-width.css">
+    <title>Media feature - width</title>
+</head>
+
+<body>
+
+    <article>
+        <h1>Media Feature - width, min-width, max-width</h1>
+        <section class="content">
+            <h2>width</h2>
+
+            <code>
+                <span>@media (width: 800px) {</span>
+                <span class="padding">body::before {</span>
+                <span class="padding more-padding">display: block;</span>
+                <span class="padding more-padding">content: 'The viewport width is exactly 800px';</span>
+                <span class="padding">}</span>
+                <span>}</span>
+       
+            </code>
+        </section>
+        <section class="content">
+            <h2>min-width</h2>
+    
+            <code>
+                <span>@media (min-width: 800px) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The viewport width is larger than 800px';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+
+            </code>
+        </section>
+        <section class="content">
+            <h2>width</h2>
+            <p>Width of the viewport including width of scrollbar.</p>
+            <code>
+                <span>@media (width: 600px) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The viewport width is 600px';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+        <section class="content">
+            <h2>max-width</h2>
+            <code>
+                <span>@media (max-width: 800px) {</span>
+                    <span class="padding">body::before {</span>
+                    <span class="padding more-padding">display: block;</span>
+                    <span class="padding more-padding">content: 'The viewport width is smaller than 800px';</span>
+                    <span class="padding">}</span>
+                    <span>}</span>
+            </code>
+        </section>
+
+    </article>
+
+</body>
+</html>
