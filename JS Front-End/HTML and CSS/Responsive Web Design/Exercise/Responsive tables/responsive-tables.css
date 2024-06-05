@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5 'Lato', sans-serif;
+}
+body{
+    background-color: #eee;
+    padding: 3em;
+}
+.table-box{
+    background-color: #fff;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    margin: 0em auto;
+    margin-bottom: 2em;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.3em;
+    border: 1pt solid #bbb;
+    border-collapse: collapse;
+}
+thead{
+    background-color: #eee;
+    
+}
+tbody{
+    display: flex;
+    flex-direction: column;
+}
+tr {
+    box-sizing: inherit;
+    display: flex;
+    
+}
+th, td{
+    box-sizing: inherit;
+    text-align: left;
+    flex-basis: 8em;
+}
+tr:not(thead>tr){
+    border-top: 1pt solid #bbb;
+
+}
+tr>*{
+    padding: 0.5em 1em;
+}
+.table-box:last-of-type th,
+.table-box:last-of-type td{
+    flex-grow: 1;
+}
+.table-box:first-of-type td:nth-of-type(2),
+.table-box:first-of-type th:nth-of-type(2){
+    flex-grow: 3;
+}
+
+.table-box:first-of-type td:last-of-type, 
+.table-box:first-of-type th:last-of-type{
+    flex-grow: 1;
+
+}
+.table-box:first-of-type td:first-of-type, 
+.table-box:first-of-type th:first-of-type{
+    flex-grow: 1;
+
+}
+@media (max-width:800px){
+
+    .table-box:first-of-type td:nth-of-type(2),
+    .table-box:first-of-type th:nth-of-type(2){
+        flex-grow: 2;
+    }
+
+    .table-box:first-of-type td:last-of-type, 
+    .table-box:first-of-type th:last-of-type{
+        flex-grow: 0;
+
+    }
+    .table-box:first-of-type td:first-of-type, 
+    .table-box:first-of-type th:first-of-type{
+        flex-grow: 0;
+
+    }
+}
