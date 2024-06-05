@@ -50,6 +50,12 @@ tr:not(thead>tr){
 tr>*{
     padding: 0.5em 1em;
 }
+.table-box:first-of-type table::before{
+    content: 'Table Title';
+    padding: 1em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 .table-box:last-of-type th,
 .table-box:last-of-type td{
     flex-grow: 1;
