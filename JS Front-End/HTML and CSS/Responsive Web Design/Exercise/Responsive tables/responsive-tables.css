@@ -93,3 +93,30 @@ tr>*{
 
     }
 }
+@media (orientation:portrait) and (max-width:800px){
+    thead{
+        display: none;
+    }
+    tr{
+        flex-direction: column;
+        
+    }
+    tr:not(:first-of-type):before{
+        content: '';
+        background-color: #bbb;
+        padding-top: 2em;
+    }
+    td:not(:first-of-type) {
+        border-top: 1px solid #bbb;
+    }
+    td {
+        display: flex;
+        gap: 1em;
+        flex-basis: auto;
+        justify-content: space-between;
+    }
+    td::before{
+        content: attr(data-title);
+        font-weight: bold;
+    }
+}
