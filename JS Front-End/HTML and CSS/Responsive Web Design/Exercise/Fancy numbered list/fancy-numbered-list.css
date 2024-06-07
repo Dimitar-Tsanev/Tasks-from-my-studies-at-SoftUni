@@ -30,8 +30,9 @@ li{
     list-style: outside none;
     overflow: hidden;
     display: flex;
-    flex: 0 1 350px;
+    flex: 1 1 350px;
     margin: 0 auto;
+    justify-content: space-between;
 }
 li::after{
     content: attr(data-title);
