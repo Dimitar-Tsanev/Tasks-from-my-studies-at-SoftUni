@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 'Lato', sans-serif;
+}
+body{
+    padding: 3em;
+    background-color: #eee;
+}
+.page{
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    padding: 2em;
+}
+header, section{
+    background-color: #fff;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0.3em;
+    padding: 1em;
+}
+h2{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 1em;
+    gap: 1em;
+}
+main::before{
+    content: '';
+    position: absolute;
+    border-left: 2px solid #ccc;
+    height: calc(100% + 2em);
+    top: 0;
+}
+section {
+    margin-left: 1.3em;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+h3{
+    width: 100%;
+}
+section::before{
+    content: '';
+    padding: 0.3em;
+    border: 1px solid #fff;
+    background-color: orange;
+    border-radius: 50%;
+    height: 1em;
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: -2em;
+}
+section:nth-of-type(2n)::before{
+    background-color: #24c924 ;
+}
+@media (min-width:800px) {
+    main::before{
+       left: 50%;
+    }
+    section{
+        width: calc(50% - 1.3em);
+        align-self: flex-end;
+        margin: 0;
+    }
+    section:nth-of-type(2n){
+        text-align: right;
+        flex-direction: row-reverse;
+        align-self: flex-start;
+    }
+    section:nth-of-type(2n)::before{
+        left: calc(100% + 0.5em);
+    }
+   
+}
