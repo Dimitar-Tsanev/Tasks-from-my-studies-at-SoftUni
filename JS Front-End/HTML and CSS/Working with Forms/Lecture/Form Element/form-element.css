@@ -14,9 +14,30 @@ header, section{
     margin-bottom: 2em;
 }
 div{
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     background-color: #eee;
     border-radius: 0.3em;
     margin: 1.5em 0;
     padding: 2em;
+}
+span{
+    display: block;
+}
+span:nth-of-type(2){
+    padding-left: 3em;
+}
+body, input, textarea, select, option{
+    font: inherit;
+}
+input{
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+
+} 
+
+input:focus{
+    border-color: #090;
+
 }
