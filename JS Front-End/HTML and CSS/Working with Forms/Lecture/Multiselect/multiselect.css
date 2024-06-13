@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 "Lato", sans-serif;
+}
+body{
+    padding: 2em;
+}
+header, section{
+    margin-bottom: 2em;
+}
+div{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 0.3em;
+    margin: 1.5em 0;
+    padding: 2em;
+}
+span{
+    display: block;
+}
+.option{
+    padding-left: 2em;
+}
+body, input, textarea, select, option{
+    font: inherit;
+}
+input, select{
+    display: inline-block;
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    outline: none;
+} 
+select{
+    display: block;
+    min-width: 10em;
+
+}
+
+select:focus, select>*:focus{
+    border-color: #090;
+
+}
