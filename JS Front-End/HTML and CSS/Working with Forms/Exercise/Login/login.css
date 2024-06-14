@@ -1,0 +1,94 @@
+@import url();
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1 "Lato", sans-serif;
+}
+body{
+    background-color: #eee;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+legend, input, label {
+    font: inherit;
+}
+.form{
+    background: #fff;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    padding: 2em;
+    width: 490px;
+}
+fieldset{
+    border: none;
+    padding: 1em;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    border-bottom: 2px solid #ccc;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.field{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom:  1em;
+}
+input, label{
+    
+    
+}
+label{
+    font-weight: bold;
+    padding: 0.5em 0;
+}
+input{
+    flex-basis: 100%;
+    border: 2px solid #ccc;
+    border-radius: 0.2em;
+    padding: 1em 0.5em;
+}
+label::after{
+    content: '*';
+    color: red;
+    font-weight: bold;
+}
+input[type="submit"]{
+    background-color: darkorange;
+    border: none;
+    color: #fff;
+    padding: 1em;
+    margin-top: 1em;
+    font-weight: bold;
+    
+}
+input:focus{
+    outline: none;
+    border: 2px solid darkorange;
+}
+input:focus ~ label{
+    color:  darkorange;
+}
+input:required:user-invalid{
+    border: 2px solid red;
+}
+input:required:user-valid{
+    border: 2px solid green;
+}
+input:required:user-invalid ~ label{
+    color: red;
+}
+input:required:user-valid ~ label{
+    color: green;
+}
