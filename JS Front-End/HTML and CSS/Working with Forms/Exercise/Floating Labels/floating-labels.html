@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="floating-labels.css">
+    <title>Floating Labels</title>
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <legend>Login</legend>
+            
+            <div class="field">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+                <p class="helper">example: Your.Mail@domain.com</p>
+            </div>
+            
+            <div class="field">
+                <input 
+                type="password" 
+                name="password" 
+                id="password"
+                required 
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+                minlength="6"
+                placeholder="Password">
+                <label for="password">Password</label>
+                <p class="helper">minimum 6 characters, letters and numbers, at least 1 special character</p>
+            </div>
+            
+            <input type="submit" value="Login">
+        </fieldset>
+        
+    </div>
+</body>
+</html>

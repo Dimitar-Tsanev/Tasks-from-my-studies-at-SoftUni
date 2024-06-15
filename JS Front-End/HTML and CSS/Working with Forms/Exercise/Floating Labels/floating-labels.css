@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 14px/1.5 "Lato", sans-serif;
+}
+body{
+    background-color: #eee;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+legend, input, label {
+    font: inherit;
+}
+.form{
+    background: #fff;
+    box-shadow: 0 0 0.5em 0 rgba(0, 0, 0, 0.2);
+    border-radius: 0.3em;
+    padding: 2em 2.5em;
+    width: 405px;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+legend{
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 700;
+    padding-bottom: 1em;
+    margin-bottom: 1.5em;
+    
+}
+.field{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom:  1.75em;
+    position: relative;
+}
+label{
+    opacity: 0.7;
+    position: absolute;
+    font-weight: bold;
+    padding: 1em 0;
+    display: flex;
+    top: -1.5em;
+}
+.helper{
+    order: -1;
+    font-style: italic;
+    line-height: 1;
+    opacity: 0.5;
+    padding: 0.3em 0;
+}
+input{
+    flex-basis: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    padding: 1em 0;
+}
+input[type="submit"]{
+    background-color: #efedf1;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.8em;
+    margin: 1.5em 0 0;
+    font-weight: bold;
+    font-size: 1.2em;
+
+}
+input::placeholder{
+    color: transparent;
+}
+
+input:focus{
+    outline: none;
+    border-bottom: 2px solid darkorange;
+}
+input:focus ~ label{
+    color:  darkorange;
+   
+}
+input:required:user-invalid{
+    border-bottom: 2px solid red;
+}
+input:required:user-valid{
+    border-bottom: 2px solid green;
+}
+input:required:user-invalid ~ label{
+    color: red;
+}
+input:required:user-valid ~ label{
+    color: green;
+}
+input[type="submit"]:hover{
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+}
+.field:has(input:placeholder-shown) label {
+    top: 0em;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
