@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sign_up-form.css">
+    <title>SignUp-form</title>
+</head>
+<body>
+    <form action="#">
+        <nav>
+            <ul>
+                <li><a class="active" href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+        <fieldset>
+            <legend>Sign Up for Free</legend>
+            <div class="name">
+                <div class="field">
+                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="field">
+                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="field email">
+                <input type="email" name="email" id="email" placeholder="Email Address" required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="field password">
+                <input type="password" name="password" id="password" placeholder="Set A Password" required>
+                <label for="password">Set A Password</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Get Started">
+    </form>
+    
+</body>
+</html>
