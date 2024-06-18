@@ -57,6 +57,10 @@ a.active{
     background-color: #42aa59;
   
 }
+a:hover{
+    color: #fff;
+    background-color: #000000;
+}
 .media{
     max-width: 36.2%;
     
