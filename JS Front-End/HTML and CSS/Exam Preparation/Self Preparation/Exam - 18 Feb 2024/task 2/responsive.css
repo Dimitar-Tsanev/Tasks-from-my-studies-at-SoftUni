@@ -1,0 +1,77 @@
+@media (max-width: 600px){
+ 
+    .team-description-wrapper{
+        display: flex;
+        padding: 2em;
+        width: initial;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .team-description-wrapper > * {
+        flex: 1 1 100%;  
+        
+    }
+    .team-description-wrapper p{
+        max-width: 33ch;
+        text-align: center;
+    }
+    .team-description-wrapper ul{
+        justify-content: space-evenly;
+        align-items:first baseline;
+    }
+    .team-description-wrapper li{
+        max-width: 25%;
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+    .team-description-wrapper ul li img{
+        max-width: 100%;
+        height: auto;
+    }
+    .about-us{
+        width: 100%;
+    }
+    .about-us p:last-of-type{
+        width: 36ch;
+    }
+    .choose-us{
+        padding: 2em;
+    }
+    .choose-us ul{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .choose-us li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .choose-us ul li p{
+        max-width: 43ch;
+        text-align: center;
+    }
+    header{
+        padding: 2em;
+    }
+    header nav{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav ul li{
+       padding-bottom:0.5em ;
+    }
+    .header-title{
+        padding: 0.8em 0;
+    }
+    .header-title h1{
+        font-size: 2.2em;
+    }
+    .header-title p{
+        font-size: 1.15em;
+    }
+}
