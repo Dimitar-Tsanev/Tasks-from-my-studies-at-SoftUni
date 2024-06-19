@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font: 16px/1.5 "Agbalumo", sans-serif;
+}
+body{
+    padding: 1em max(calc((100vw - 840px)/2), 1em);
+}
+.page{
+    border: 2px solid black;
+  
+}
+main p, figcaption{
+    text-indent: 1.5em;
+}
+
+header{
+    background-color: #d5ebea;
+    padding: 2em 3em 0 1.5em;
+}
+.header-wrapper > *{
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+.header-wrapper h1{
+    font-size: 2.3em;
+    font-weight: 900;
+}
+.header-wrapper p{
+    font-size: 1.1em;
+}
+.main-wrapper{
+    width: 100%;
+    padding: 2em 3em 5em 1.5em;
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+}
+.content{
+    align-self: flex-end;
+    font-size: 1.04em;
+}
+.content p:first-of-type{
+    margin-bottom: 2em;
+}
+.media{
+    min-width: 38%;
+}
+figure{
+    overflow: hidden;
+    padding: 0.5em 0.7em 0.7em 0.5em;
+    border: 2px solid black;
+}
+figcaption{
+    font-size: 0.7em;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+}
+footer{
+    background-color: #d5ebea;
+    padding: 1em 2em 0.5em;
+    position: relative;
+}
+footer span{
+    font-weight: bold;
+}
+footer p{
+    margin-bottom: 0.7em;
+}
+footer h3{
+    font-size: 1.4em;
+    padding: 0 3em;
+    position: absolute;
+    background-color: black;
+    color: #fff;
+    top: -1.5em;
+    left: 0;
+}
