@@ -1,7 +1,7 @@
 function multiplyNumberByTwo (num){
-    num = num * 2
-    console.log(num)
+    num = num * 2;
+    console.log(num);
 }
-multiplyNumberByTwo (2)
-multiplyNumberByTwo (5)
-multiplyNumberByTwo (20)
+multiplyNumberByTwo (2);
+multiplyNumberByTwo (5);
+multiplyNumberByTwo (20);
