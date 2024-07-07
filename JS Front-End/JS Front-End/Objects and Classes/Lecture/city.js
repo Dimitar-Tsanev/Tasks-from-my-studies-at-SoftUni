@@ -2,7 +2,7 @@ function printInfo(city){
     let entity = Object.entries(city);
 
     for (const [key, value] of entity) {
-        console.log (`${key} -> ${value}`)
+        console.log (`${key} -> ${value}`);
     }
 }
 printInfo({
