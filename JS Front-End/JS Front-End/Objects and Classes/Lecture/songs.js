@@ -5,14 +5,6 @@ function invokeSongsList(mixedData){
             this.name = songName;
             this.duration = songDuration;
         }
-        
-        getListType(){
-            return this.listType;
-        }
-        
-        getName(){
-            return this.name;
-        }
     }
     const invokeAll = 'all';
     const [numberOfSongs, ...dataLeft] = mixedData;
@@ -29,14 +21,14 @@ function invokeSongsList(mixedData){
 
     if (typeOfListToInvoke === invokeAll){
         for (const song of songs) {
-            console.log (song.getName()); 
+            console.log (song.name); 
         }
         return;
     }
 
     for (const song of songs) {
-        if (song.getListType() === typeOfListToInvoke){
-            console.log (song.getName());
+        if (song.listType === typeOfListToInvoke){
+            console.log (song.name);
         }
     }
 }
