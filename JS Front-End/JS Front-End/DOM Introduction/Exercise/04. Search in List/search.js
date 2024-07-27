@@ -13,6 +13,7 @@ function search() {
       match.style.fontWeight = "bold";
       match.style.textDecoration = "underline";
    });
+   
    document.getElementById('searchText').value = '';
 
    document.getElementById('result').textContent = `${matches.length} matches found`;
