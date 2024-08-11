@@ -16,10 +16,12 @@ function getInfo() {
     
     const stopNameElement = document.getElementById('stopName');
     
-    fetch(`${baseUrl}\\${inputStopId}`)
+    fetch(`${baseUrl}${inputStopId}`)
     .then((res) => res.json())
-    .then( response => {
-        const [busses, bussStopName] = Object.values(response);
+    .then( result  => {
+        const bussStopName = result['name'];
+        const busses = result['buses']
+        console.log(busses)
         stopNameElement.textContent = bussStopName;
         
         for (const bussId in busses) {
@@ -33,6 +35,6 @@ function getInfo() {
     });
 
     function displayError(){
-        stopNameElement.textContent = 'Error'
+        stopNameElement.textContent = 'Error';
     }
 }
