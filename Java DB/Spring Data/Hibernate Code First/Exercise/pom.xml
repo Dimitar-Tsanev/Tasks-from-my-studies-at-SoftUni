@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>Gringotts Database</module>
+        <module>Sales Database</module>
     </modules>
 
     <properties>
