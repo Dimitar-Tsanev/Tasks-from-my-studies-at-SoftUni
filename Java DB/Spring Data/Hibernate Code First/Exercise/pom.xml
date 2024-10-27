@@ -11,6 +11,7 @@
     <modules>
         <module>Gringotts Database</module>
         <module>Sales Database</module>
+        <module>University System</module>
     </modules>
 
     <properties>
