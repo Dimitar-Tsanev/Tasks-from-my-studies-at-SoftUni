@@ -1,0 +1,14 @@
+[
+  {
+    "discounted": "true",
+    "number": 1000123,
+    "saleDate": "2022-02-02 12:43:00",
+    "seller": 1
+  },
+  {
+    "discounted": "true",
+    "number": 1000,
+    "saleDate": "2022-02-02 12:43:00",
+    "seller": 1
+  }
+]
