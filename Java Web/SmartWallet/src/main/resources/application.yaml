@@ -16,4 +16,19 @@ spring:
     resources:
       static-locations: file:./src/main/resources/static/
       cache-period: 0
-
+users:
+  default:
+    role: USER
+    account-state: true
+subscription:
+  default:
+    type: DEFAULT
+    status: ACTIVE
+    period: MONTHLY
+    price: 0.00
+    renewalAllowed: true
+wallet:
+  default:
+    status: ACTIVE
+    balance: 20.00
+    currency: EUR
