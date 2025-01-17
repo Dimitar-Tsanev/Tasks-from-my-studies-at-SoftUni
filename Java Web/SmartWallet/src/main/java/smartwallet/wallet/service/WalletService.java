@@ -11,4 +11,6 @@ public interface WalletService {
     void createNewWallet ( User user );
 
     Transaction topUp ( UUID walletId, BigDecimal amount );
+
+    Transaction charge (User user, UUID walletId, BigDecimal amount, String chargeDescription );
 }

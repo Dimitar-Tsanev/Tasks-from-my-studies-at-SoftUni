@@ -22,7 +22,6 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class WalletServiceImpl implements WalletService {
-    private static final String SMART_WALLET_LTD = "Smart Wallet Ltd";
 
     private final WalletRepository walletRepository;
     private final WalletProperty walletProperty;
@@ -45,33 +44,77 @@ public class WalletServiceImpl implements WalletService {
     @Override
     @Transactional
     public Transaction topUp ( UUID walletId, BigDecimal amount ) {
-        Wallet wallet = walletRepository.findById ( walletId )
-                .orElseThrow (()-> new DomainException ( "{wallet.not.found.exception}" ));
+        Wallet wallet = getWalletById ( walletId );
 
-        String transactionDescription = "Top up %.2f".formatted(amount.doubleValue());
+        String transactionDescription = "Top up %.2f".formatted ( amount.doubleValue ( ) );
 
         TransactionStatus status = TransactionStatus.FAILED;
-        String failureReason= "Inactive wallet";
+        String failureReason = "{failure.reason.inactive.wallet}";
 
-        if ( WalletStatus.ACTIVE.equals ( wallet.getStatus () ) ) {
+        if ( WalletStatus.ACTIVE.equals ( wallet.getStatus ( ) ) ) {
             status = TransactionStatus.SUCCEEDED;
             failureReason = null;
 
-            wallet.setBalance(wallet.getBalance().add(amount));
-            wallet.setUpdatedOn( LocalDateTime.now());
+            wallet.setBalance ( wallet.getBalance ( ).add ( amount ) );
+            wallet.setUpdatedOn ( LocalDateTime.now ( ) );
+
+            walletRepository.save ( wallet );
+        }
+
+        return generateTransaction ( wallet, amount, TransactionType.DEPOSIT,
+                status, transactionDescription, failureReason );
+    }
+
+    @Override
+    @Transactional
+    public Transaction charge ( User user, UUID walletId, BigDecimal amount, String chargeDescription ) {
+        Wallet wallet = getWalletById ( walletId );
+
+        TransactionStatus status = TransactionStatus.FAILED;
+        String failureReason = "{failure.reason.inactive.wallet}";
+
+        boolean isBalanceEnoughForTransaction = wallet.getBalance ().compareTo ( amount ) >= 0;
+
+        if ( !isBalanceEnoughForTransaction) {
+            failureReason = "Insufficient funds, top up your account";
+
+        }
+
+        if ( WalletStatus.ACTIVE.equals ( wallet.getStatus ( ) ) && isBalanceEnoughForTransaction) {
+            status = TransactionStatus.SUCCEEDED;
+            failureReason = null;
+
+            BigDecimal newBalance = wallet.getBalance().subtract(amount);
+            wallet.setBalance(newBalance);
+            wallet.setUpdatedOn(LocalDateTime.now());
 
             walletRepository.save(wallet);
         }
 
-        return transactionService.createTransaction(wallet.getOwner(),
-                SMART_WALLET_LTD,
-                walletId.toString(),
+        return generateTransaction ( wallet,amount, TransactionType.WITHDRAWAL,status,chargeDescription,failureReason );
+    }
+
+    private Wallet getWalletById ( UUID walletID ) {
+        return walletRepository.findById ( walletID )
+                .orElseThrow ( () -> new DomainException ( "{wallet.not.found.exception}" ) );
+    }
+
+    private Transaction generateTransaction ( Wallet wallet,
+                                              BigDecimal amount,
+                                              TransactionType type,
+                                              TransactionStatus status,
+                                              String transactionDescription,
+                                              String failureReason ) {
+
+        return transactionService.createTransaction ( wallet.getOwner ( ),
+                "{smart.wallet.ltd}",
+                wallet.getId ( ).toString ( ),
                 amount,
-                wallet.getBalance(),
-                wallet.getCurrency(),
-                TransactionType.DEPOSIT,
+                wallet.getBalance ( ),
+                wallet.getCurrency ( ),
+                type,
                 status,
                 transactionDescription,
-                failureReason);
+                failureReason );
     }
 }
