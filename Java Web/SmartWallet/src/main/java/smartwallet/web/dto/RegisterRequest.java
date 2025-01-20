@@ -7,13 +7,15 @@ import smartwallet.shared.utils.validation.anotations.UniqueUsername;
 public record RegisterRequest(
 
         @Size(min = 6, message = "{request.username.length}")
+        @NotBlank(message = "{request.username.length}")
         @UniqueUsername
-        String Username,
+        String username,
 
         @Size(min = 6, message = "{request.password.length}")
-        String Password,
+        @NotBlank(message = "{request.username.length}")
+        String password,
 
         @NotBlank
-        String Country
+        String country
 ) {
 }

@@ -22,6 +22,8 @@ import java.util.UUID;
 @Service
 @RequiredArgsConstructor
 public class WalletServiceImpl implements WalletService {
+    private static final String SMART_WALLET_LTD = "Smart Wallet Ltd";
+    private static final String INACTIVE_WALLET = "Inactive wallet";
 
     private final WalletRepository walletRepository;
     private final WalletProperty walletProperty;
@@ -49,7 +51,7 @@ public class WalletServiceImpl implements WalletService {
         String transactionDescription = "Top up %.2f".formatted ( amount.doubleValue ( ) );
 
         TransactionStatus status = TransactionStatus.FAILED;
-        String failureReason = "{failure.reason.inactive.wallet}";
+        String failureReason = INACTIVE_WALLET;
 
         if ( WalletStatus.ACTIVE.equals ( wallet.getStatus ( ) ) ) {
             status = TransactionStatus.SUCCEEDED;
@@ -71,32 +73,32 @@ public class WalletServiceImpl implements WalletService {
         Wallet wallet = getWalletById ( walletId );
 
         TransactionStatus status = TransactionStatus.FAILED;
-        String failureReason = "{failure.reason.inactive.wallet}";
+        String failureReason = INACTIVE_WALLET;
 
-        boolean isBalanceEnoughForTransaction = wallet.getBalance ().compareTo ( amount ) >= 0;
+        boolean isBalanceEnoughForTransaction = wallet.getBalance ( ).compareTo ( amount ) >= 0;
 
-        if ( !isBalanceEnoughForTransaction) {
+        if ( !isBalanceEnoughForTransaction ) {
             failureReason = "Insufficient funds, top up your account";
 
         }
 
-        if ( WalletStatus.ACTIVE.equals ( wallet.getStatus ( ) ) && isBalanceEnoughForTransaction) {
+        if ( WalletStatus.ACTIVE.equals ( wallet.getStatus ( ) ) && isBalanceEnoughForTransaction ) {
             status = TransactionStatus.SUCCEEDED;
             failureReason = null;
 
-            BigDecimal newBalance = wallet.getBalance().subtract(amount);
-            wallet.setBalance(newBalance);
-            wallet.setUpdatedOn(LocalDateTime.now());
+            BigDecimal newBalance = wallet.getBalance ( ).subtract ( amount );
+            wallet.setBalance ( newBalance );
+            wallet.setUpdatedOn ( LocalDateTime.now ( ) );
 
-            walletRepository.save(wallet);
+            walletRepository.save ( wallet );
         }
 
-        return generateTransaction ( wallet,amount, TransactionType.WITHDRAWAL,status,chargeDescription,failureReason );
+        return generateTransaction ( wallet, amount, TransactionType.WITHDRAWAL, status, chargeDescription, failureReason );
     }
 
     private Wallet getWalletById ( UUID walletID ) {
         return walletRepository.findById ( walletID )
-                .orElseThrow ( () -> new DomainException ( "{wallet.not.found.exception}" ) );
+                .orElseThrow ( () -> new DomainException ( "Wallet does not exist" ) );
     }
 
     private Transaction generateTransaction ( Wallet wallet,
@@ -107,7 +109,7 @@ public class WalletServiceImpl implements WalletService {
                                               String failureReason ) {
 
         return transactionService.createTransaction ( wallet.getOwner ( ),
-                "{smart.wallet.ltd}",
+                SMART_WALLET_LTD,
                 wallet.getId ( ).toString ( ),
                 amount,
                 wallet.getBalance ( ),

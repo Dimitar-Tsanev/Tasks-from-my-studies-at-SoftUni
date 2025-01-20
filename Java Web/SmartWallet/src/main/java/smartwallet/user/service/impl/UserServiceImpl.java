@@ -20,6 +20,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
+    private static final String INCORRECT_USER = "Username or password are incorrect";
 
     private final UserRepository userRepository;
     private final WalletService walletService;
@@ -41,13 +42,13 @@ public class UserServiceImpl implements UserService {
         Optional<User> optionalUser = userRepository.findByUsername ( loginRequest.username () );
 
         if ( optionalUser.isEmpty () ) {
-            throw new DomainException ( "{request.login.exception}" );
+            throw new DomainException ( INCORRECT_USER );
         }
 
         User user = optionalUser.get ();
 
         if (passwordEncoder.matches ( user.getPassword (), loginRequest.password ())) {
-            throw new DomainException ( "{request.login.exception}" );
+            throw new DomainException ( INCORRECT_USER );
         }
 
         return user;
@@ -60,11 +61,11 @@ public class UserServiceImpl implements UserService {
 
     private User generateUser ( RegisterRequest registerRequest ) {
         return User.builder ( )
-                .username ( registerRequest.Username ( ) )
-                .password ( passwordEncoder.encode ( registerRequest.Password ( ) ) )
+                .username ( registerRequest.username ( ) )
+                .password ( passwordEncoder.encode ( registerRequest.password ( ) ) )
                 .role ( userProperty.role ())
                 .isActive ( userProperty.accountState () )
-                .country ( Country.valueOf ( registerRequest.Country ( ) ) )
+                .country ( Country.valueOf ( registerRequest.country ( ) ) )
                 .createdOn ( userProperty.now () )
                 .updatedOn ( userProperty.now () )
                 .build ( );
